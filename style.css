@@ -1092,19 +1092,19 @@ header .header-content .is-visible {
 }
 
 .about-portal-container .about2 .show-on-scroll .left-block .slide1 {
-  background: url("./image/BelisonNature/BelisonBeach1.jpg") no-repeat center;
+  background: url("./Image/BelisonNature/BelisonBeach1.jpg") no-repeat center;
   background-size: cover;
   animation: fadein 15s infinite ease;
 }
 
 .about-portal-container .about2 .show-on-scroll .left-block .slide2 {
-  background: url("./image/BelisonNature/BelisonMountain2.jpg") no-repeat center;
+  background: url("./Image/BelisonNature/BelisonMountain2.jpg") no-repeat center;
   background-size: cover;
   animation: fadein2 15s infinite ease;
 }
 
 .about-portal-container .about2 .show-on-scroll .left-block .slide3 {
-  background: url(".image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg") no-repeat center;
+  background: url(".Image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg") no-repeat center;
   background-size: cover;
   animation: fadein3 15s infinite ease;
 }
