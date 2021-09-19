@@ -980,22 +980,22 @@ header .header-content .is-visible {
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img1 {
-  background: url(../BelisonWebsite/image/Tourist-Spots/OceanView/Belison-Sunset-1.jpg) no-repeat center;
+  background: url("../BelisonWebsite/image/Tourist-Spots/OceanView/Belison-Sunset-1.jpg") no-repeat center;
   background-size: cover;
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img2 {
-  background: url(../BelisonWebsite/image/BelisonMunicipalHallEtc/MunicipalHallFrontView.jpg) no-repeat center;
+  background: url("../BelisonWebsite/image/BelisonMunicipalHallEtc/MunicipalHallFrontView.jpg") no-repeat center;
   background-size: cover;
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img3 {
-  background: url(../BelisonWebsite/image/Tangible/Mt.Guinotan&Cave/Mt-GuinobatanCave.jpg) no-repeat bottom;
+  background: url("../BelisonWebsite/image/Tangible/Mt.Guinotan&Cave/Mt-GuinobatanCave.jpg") no-repeat bottom;
   background-size: cover;
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img4 {
-  background: url(../BelisonWebsite/image/Intangeble/Guinobatan/54434329_2166758403410116_1509170466076491776_n.jpg);
+  background: url("../BelisonWebsite/image/Intangeble/Guinobatan/54434329_2166758403410116_1509170466076491776_n.jpg");
 }
 
 .true-belison-container .true-accordion .is-visible {
