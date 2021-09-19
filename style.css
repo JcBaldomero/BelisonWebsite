@@ -1092,7 +1092,7 @@ header .header-content .is-visible {
 }
 
 .about-portal-container .about2 .show-on-scroll .left-block .slide1 {
-  background: url("../BelisonWebsite/image/BelisonNature/BelisonBeach1.jpg") no-repeat center;
+  background: url("./image/BelisonNature/BelisonBeach1.jpg") no-repeat center;
   background-size: cover;
   animation: fadein 15s infinite ease;
 }
@@ -1104,7 +1104,7 @@ header .header-content .is-visible {
 }
 
 .about-portal-container .about2 .show-on-scroll .left-block .slide3 {
-  background: url("../BelisonWebsite/image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg") no-repeat center;
+  background: url(".image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg") no-repeat center;
   background-size: cover;
   animation: fadein3 15s infinite ease;
 }
