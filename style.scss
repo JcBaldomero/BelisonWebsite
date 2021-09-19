@@ -14,6 +14,7 @@
   list-style: none;
   font-family:  Helvetica, sans-serif;
   scroll-behavior: smooth;
+  font-display:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 main{
   position: relative;
@@ -304,7 +305,7 @@ header{
         padding: 2rem;
       }
       .right-block{
-        background: url(../BelisonWebsite/Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg) no-repeat center;
+        background: url('../BelisonWebsite/Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg') no-repeat center;
         background-size: cover;
         height: 420px;
       }
@@ -328,17 +329,17 @@ header{
       filter: brightness(100%);
     }
     .slide1{
-      background: url(../BelisonWebsite/image/BelisonNature/BelisonBeach1.jpg) no-repeat center;
+      background: url('../BelisonWebsite/image/BelisonNature/BelisonBeach1.jpg') no-repeat center;
       background-size: cover;
       animation:fadein 15s infinite ease;
       }
       .slide2{
-      background: url(../BelisonWebsite/image/BelisonNature/BelisonMountain2.jpg) no-repeat center;
+      background: url('../BelisonWebsite/image/BelisonNature/BelisonMountain2.jpg') no-repeat center;
       background-size: cover;
       animation:fadein2 15s infinite ease;
       }
       .slide3{
-      background: url(../BelisonWebsite/image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg) no-repeat center;
+      background: url('../BelisonWebsite/image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg') no-repeat center;
       background-size: cover;
       animation:fadein3 15s infinite ease;
       } 
