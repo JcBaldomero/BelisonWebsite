@@ -565,8 +565,9 @@ footer .bottom-footer span:hover {
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
+  }
+  footer .top-footer .reference-container .references-links .links2 {
     text-align: center;
-    border: 1px solid yellow;
   }
 }
 
@@ -1074,7 +1075,7 @@ header .header-content .is-visible {
 }
 
 .about-portal-container .about1 .show-on-scroll .right-block {
-  background: url("../BelisonWebsite/Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg") no-repeat center;
+  background: url("./Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg") no-repeat center;
   background-size: cover;
   height: 420px;
 }
