@@ -349,6 +349,7 @@ nav {
 ##Screen = B/w 1200px to 1450px
 */
 /** @format */
+/** @format */
 .true-belison-container .true-text .show-on-scroll a, .about-portal-container .about2 .show-on-scroll .right-block a, .about-portal-container .about3 .show-on-scroll .left-block a, .gallery-portal-container .gallery-text .show-on-scroll a, .contact-container .contact-details .show-on-scroll .contact-btn {
   border-radius: 5px;
   color: white;
@@ -420,20 +421,23 @@ footer .top-footer .site-links-container .site-links {
   margin-top: 1rem;
 }
 
-footer .top-footer .site-links-container .site-links .links1, footer .top-footer .site-links-container .site-links .links2 {
+footer .top-footer .site-links-container .site-links .links1,
+footer .top-footer .site-links-container .site-links .links2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-footer .top-footer .site-links-container .site-links .links1 a, footer .top-footer .site-links-container .site-links .links2 a {
+footer .top-footer .site-links-container .site-links .links1 a,
+footer .top-footer .site-links-container .site-links .links2 a {
   color: #8c979e;
-  margin: .5rem 0rem;
-  transition: .5s ease;
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
 }
 
-footer .top-footer .site-links-container .site-links .links1 a:hover, footer .top-footer .site-links-container .site-links .links2 a:hover {
+footer .top-footer .site-links-container .site-links .links1 a:hover,
+footer .top-footer .site-links-container .site-links .links2 a:hover {
   color: white;
 }
 
@@ -458,20 +462,23 @@ footer .top-footer .reference-container .references-links {
   margin-top: 1rem;
 }
 
-footer .top-footer .reference-container .references-links .links1, footer .top-footer .reference-container .references-links .links2 {
+footer .top-footer .reference-container .references-links .links1,
+footer .top-footer .reference-container .references-links .links2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-footer .top-footer .reference-container .references-links .links1 a, footer .top-footer .reference-container .references-links .links2 a {
+footer .top-footer .reference-container .references-links .links1 a,
+footer .top-footer .reference-container .references-links .links2 a {
   color: #8c979e;
-  margin: .5rem 0rem;
-  transition: .5s ease;
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
 }
 
-footer .top-footer .reference-container .references-links .links1 a:hover, footer .top-footer .reference-container .references-links .links2 a:hover {
+footer .top-footer .reference-container .references-links .links1 a:hover,
+footer .top-footer .reference-container .references-links .links2 a:hover {
   color: white;
 }
 
@@ -491,7 +498,7 @@ footer .bottom-footer {
 }
 
 footer .bottom-footer p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 footer .bottom-footer span {
@@ -512,7 +519,6 @@ footer .bottom-footer span:hover {
 @media (min-width: 240px) and (max-width: 480px) {
   footer {
     bottom: -25%;
-    border: 1px solid red;
   }
   footer .top-footer {
     display: flex;
@@ -559,6 +565,7 @@ footer .bottom-footer span:hover {
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
+    text-align: center;
   }
 }
 
@@ -981,17 +988,17 @@ header .header-content .is-visible {
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img1 {
-  background: url("../BelisonWebsite/image/Tourist-Spots/OceanView/Belison-Sunset-1.jpg") no-repeat center;
+  background: url("./Image/Tourist-Spots/OceanView/Belison-Sunset-1.jpg") no-repeat center;
   background-size: cover;
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img2 {
-  background: url("../BelisonWebsite/image/BelisonMunicipalHallEtc/MunicipalHallFrontView.jpg") no-repeat center;
+  background: url("./Image/BelisonMunicipalHallEtc/MunicipalHallFrontView.jpg") no-repeat center;
   background-size: cover;
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img3 {
-  background: url("../BelisonWebsite/image/Tangible/Mt.Guinotan&Cave/Mt-GuinobatanCave.jpg") no-repeat bottom;
+  background: url("./Image/Tangible/Mt.Guinotan&Cave/Mt-GuinobatanCave.jpg") no-repeat bottom;
   background-size: cover;
 }
 
