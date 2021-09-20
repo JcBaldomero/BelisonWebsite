@@ -148,6 +148,9 @@ footer {
           width: 100%;
           @include flexBox(center, center, column);
           margin-top: 1rem;
+          .links1{
+            border: 1px solid red;
+          }
         .links2{
           text-align: center;
           border: 1px solid green;
