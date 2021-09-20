@@ -121,6 +121,7 @@ footer {
       width: 100%;
       padding-top: 5rem;
       margin: 0;
+
       .site-links-container,
       .reference-container,
       .logo-container {
@@ -148,6 +149,7 @@ footer {
           @include flexBox(center, center, column);
           margin-top: 1rem;
           text-align: center;
+          border: 1px solid yellow;
         }
       }
     }
