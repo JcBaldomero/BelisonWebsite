@@ -566,6 +566,7 @@ footer .bottom-footer span:hover {
     flex-direction: column;
     margin-top: 1rem;
     text-align: center;
+    border: 1px solid yellow;
   }
 }
 
@@ -1003,7 +1004,7 @@ header .header-content .is-visible {
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img4 {
-  background: url("../BelisonWebsite/image/Intangeble/Guinobatan/54434329_2166758403410116_1509170466076491776_n.jpg");
+  background: url("./Image/Intangeble/Guinobatan/54434329_2166758403410116_1509170466076491776_n.jpg");
 }
 
 .true-belison-container .true-accordion .is-visible {
