@@ -165,7 +165,7 @@ footer{
                 padding-left: 0rem;
                 .references-links{
                     width: 100%;
-                    @include flexBox(center,center,row);
+                    @include flexBox(center,center,column);
                     margin-top: 1rem;
                 }
             }
