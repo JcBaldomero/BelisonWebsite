@@ -115,7 +115,7 @@ footer {
 @media (min-width: 240px) and (max-width: 480px) {
   footer {
     bottom: -25%;
-    border: 1px solid red;
+    border: 1px solid greenyellow;
     .top-footer {
       @include flexBox(flex-end, center, column);
       width: 100%;
