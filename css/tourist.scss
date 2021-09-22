@@ -98,6 +98,8 @@ header{
     }
     .social-icons{
         @include flexBox(center,center,row);
+        flex-wrap: wrap;
+        width: 100%;
     img{
         width: 3.2rem;
         transition: .8s ease;
@@ -364,10 +366,13 @@ header{
         }
         .grid-wrapper{
             width: 95%;
-            @include grid(repeat(2,1fr),1fr,1rem);
+            @include grid(repeat(2,1fr),repeat(12, 150px),1rem);
         .grid{
            grid-column: unset;
            grid-row: unset;
+        .link-text{
+            width: 100%;
+        }
         }
       
         }
@@ -385,14 +390,14 @@ header{
     
     .ocean-view{
         .grid-wrapper{
-            @include grid(repeat(2,1fr),1fr,1rem);
+            @include grid(repeat(2,1fr),repeat(9, 150px),1rem);
     
         }
     }
     
     .santa-fe{
         .grid-wrapper{
-            @include grid(repeat(2,1fr),1fr,1rem);
+            @include grid(repeat(2,1fr),repeat(6, 150px),1rem);
             .grid{
                 grid-column: unset;
                 grid-row: unset;
@@ -436,6 +441,59 @@ header{
 ##Screen =  768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+header{
+    .header-content{
+        width: 75%;
+    }
+}
+    .grid-container{
+    .title-descript{
+        width: 75%;
+    }
+    .vid-container{
+        flex-wrap: wrap;
+        .iframe{
+            width: 45%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.ocean-view{
+    .grid-wrapper{
+        @include grid(repeat(2,1fr),repeat(7,400px),1rem);
+    .grid{
+        grid-column: unset;
+        grid-row: unset;
+    }
+    }
+}
+.santa-fe{
+    .grid-wrapper{
+        @include grid(repeat(2,1fr),repeat(5,400px),1rem);
+    .grid{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    }
+}
+
+.bel-WayofLife{
+    .grid-wrapper{
+        @include grid(repeat(2,1fr),repeat(10,300px),1rem);
+        .grid{
+            grid-row: unset;
+            grid-column: unset;
+        }
+        .vid-container{
+            border: 1px solid red;
+            margin-top: 3rem;
+        }
+    }
+}
+
+
+// 
 }
 
 /* 
