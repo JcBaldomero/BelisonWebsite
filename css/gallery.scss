@@ -753,7 +753,7 @@ main{
             transition-delay: unset;
         }
     }
-    .grid2{
+    .grid2,.grid3{
         .show-on-scroll{
             img{
          width: 90%;   
@@ -761,16 +761,10 @@ main{
         }   
     }
     }
-    .grid3{
-    .show-on-scroll{
-            img{
-         width: 90%;   
-         height: 100%;
-        }   
-    }
-    }
 
 
+
+    
 
     .card-wrapper{
         width: auto;
@@ -797,8 +791,12 @@ main{
 
         }
         }
+        &:hover .card{
+            transform:rotateX(0deg);
         }
-
+        }
+   
+    
 
  
 

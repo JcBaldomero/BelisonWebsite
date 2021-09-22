@@ -349,6 +349,7 @@ nav {
 ##Screen = B/w 1200px to 1450px
 */
 /** @format */
+/** @format */
 .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a, .cultural-container .content-wrapper a, .ecotourism-container .wrapper .button a {
   border-radius: 5px;
   color: white;
@@ -420,20 +421,23 @@ footer .top-footer .site-links-container .site-links {
   margin-top: 1rem;
 }
 
-footer .top-footer .site-links-container .site-links .links1, footer .top-footer .site-links-container .site-links .links2 {
+footer .top-footer .site-links-container .site-links .links1,
+footer .top-footer .site-links-container .site-links .links2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-footer .top-footer .site-links-container .site-links .links1 a, footer .top-footer .site-links-container .site-links .links2 a {
+footer .top-footer .site-links-container .site-links .links1 a,
+footer .top-footer .site-links-container .site-links .links2 a {
   color: #8c979e;
-  margin: .5rem 0rem;
-  transition: .5s ease;
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
 }
 
-footer .top-footer .site-links-container .site-links .links1 a:hover, footer .top-footer .site-links-container .site-links .links2 a:hover {
+footer .top-footer .site-links-container .site-links .links1 a:hover,
+footer .top-footer .site-links-container .site-links .links2 a:hover {
   color: white;
 }
 
@@ -458,20 +462,23 @@ footer .top-footer .reference-container .references-links {
   margin-top: 1rem;
 }
 
-footer .top-footer .reference-container .references-links .links1, footer .top-footer .reference-container .references-links .links2 {
+footer .top-footer .reference-container .references-links .links1,
+footer .top-footer .reference-container .references-links .links2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-footer .top-footer .reference-container .references-links .links1 a, footer .top-footer .reference-container .references-links .links2 a {
+footer .top-footer .reference-container .references-links .links1 a,
+footer .top-footer .reference-container .references-links .links2 a {
   color: #8c979e;
-  margin: .5rem 0rem;
-  transition: .5s ease;
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
 }
 
-footer .top-footer .reference-container .references-links .links1 a:hover, footer .top-footer .reference-container .references-links .links2 a:hover {
+footer .top-footer .reference-container .references-links .links1 a:hover,
+footer .top-footer .reference-container .references-links .links2 a:hover {
   color: white;
 }
 
@@ -491,7 +498,7 @@ footer .bottom-footer {
 }
 
 footer .bottom-footer p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 footer .bottom-footer span {
@@ -515,7 +522,7 @@ footer .bottom-footer span:hover {
   }
   footer .top-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -547,11 +554,9 @@ footer .bottom-footer span:hover {
   footer .top-footer .reference-container {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
-
   }
   footer .top-footer .reference-container .references-links {
     width: 100%;
@@ -561,18 +566,7 @@ footer .bottom-footer span:hover {
     flex-direction: column;
     margin-top: 1rem;
   }
-  footer .top-footer .reference-container .references-links .links1{
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-  }
   footer .top-footer .reference-container .references-links .links2 {
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
     text-align: center;
   }
 }
@@ -1518,11 +1512,7 @@ main {
   .tourist-spot-container .grid-wrapper .grid4 .is-visible {
     transition-delay: unset;
   }
-  .tourist-spot-container .grid-wrapper .grid2 .show-on-scroll img {
-    width: 90%;
-    height: 100%;
-  }
-  .tourist-spot-container .grid-wrapper .grid3 .show-on-scroll img {
+  .tourist-spot-container .grid-wrapper .grid2 .show-on-scroll img, .tourist-spot-container .grid-wrapper .grid3 .show-on-scroll img {
     width: 90%;
     height: 100%;
   }
@@ -1547,6 +1537,9 @@ main {
   .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card {
     transform: rotateX(0deg);
     padding: 1rem 1rem 2rem 1rem;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper:hover .card {
+    transform: rotateX(0deg);
   }
   .cultural-container {
     padding: 5rem 0rem;
