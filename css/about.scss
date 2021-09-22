@@ -160,7 +160,6 @@ header {
         .panel {
           width: 70%;
           background-color: $whiteHeaders;
-          padding: 0rem 1rem;
           box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.301);
           overflow: hidden;
           max-height: 0;
@@ -329,7 +328,8 @@ header {
         width: 100%;
         h2 {
           color: $textHover;
-          font-size: clamp(1.3rem, 2rem, 4vw);
+          font-size: clamp(1.5rem, 2rem, 4vw);
+          margin-bottom: .5rem;
         }
         p {
           color: $ptext;
@@ -409,7 +409,7 @@ header {
     .seal-img {
       .show-on-scroll {
         opacity: 0;
-        transform: translateY(-40%);
+        transform: translateY(-50%);
         transition: 1s ease;
       }
       .is-visible {
@@ -807,8 +807,10 @@ header {
         .faq-accordion {
           width: 100%;
           margin-bottom: 2rem;
-
           @include flexBox(center, center, column);
+          .panel{
+            padding: 0rem 1rem;
+          }
         }
 
         .faq-img {
@@ -833,6 +835,15 @@ header {
         }
       }
     }
+    .row1 {
+      .show-on-scroll {
+        transform: translateX(40%);
+      }
+      .is-visible {
+        transform: translateX(0%);
+        transition-delay: 0s;
+      }
+    }
     .row2,
     .row3 {
       .show-on-scroll {
@@ -842,6 +853,16 @@ header {
             border: unset;
           }
         }
+      }
+    }
+    .row3 {
+      .show-on-scroll {
+
+        transform: translateX(40%);
+  
+      }
+      .is-visible {
+        transform: translateX(0%);
       }
     }
   }
@@ -854,23 +875,38 @@ header {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       .grid {
-        padding: 0rem 0rem 1rem 1rem;
+        padding: 0rem 1rem 1rem 1rem;
       }
 
       .grid1 {
         grid-column: unset;
+        .is-visible {
+          transition-delay: 0s;
+        }
       }
       .grid2 {
         grid-column: unset;
+        .is-visible {
+          transition-delay: 0s;
+        }
       }
       .grid3 {
         grid-column: unset;
+        .is-visible {
+          transition-delay: 0s;
+        }
       }
       .grid4 {
         grid-column: unset;
+        .is-visible {
+          transition-delay: 0s;
+        }
       }
       .grid5 {
         grid-column: unset;
+        .is-visible {
+          transition-delay: 0s;
+        }
       }
     }
   }
@@ -878,7 +914,17 @@ header {
   // Belison Seal
   .belison-seal-container {
     padding: 3rem 0rem;
+    .seal-content{
+    .seal-text {
+      width: 100%;
+      .show-on-scroll {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    }
+   }
   }
+
  // Belison Officials
 .officials-container{
 
@@ -915,6 +961,7 @@ header {
       margin-bottom: 2rem;
     p{
       padding: 0rem 1rem;
+      text-align: center;
     }
     }
     .wrapper {

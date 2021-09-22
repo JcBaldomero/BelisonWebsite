@@ -853,7 +853,6 @@ header .header-content .is-visible {
 .belison-faq-container .faq-row .show-on-scroll .faq-accordion .panel {
   width: 70%;
   background-color: white;
-  padding: 0rem 1rem;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.301);
   overflow: hidden;
   max-height: 0;
@@ -1047,7 +1046,8 @@ header .header-content .is-visible {
 
 .belison-geo-container .geo-grid-container .grid .grid-text h2 {
   color: #dfc15e;
-  font-size: clamp(1.3rem, 2rem, 4vw);
+  font-size: clamp(1.5rem, 2rem, 4vw);
+  margin-bottom: .5rem;
 }
 
 .belison-geo-container .geo-grid-container .grid .grid-text p {
@@ -1146,7 +1146,7 @@ header .header-content .is-visible {
 
 .belison-seal-container .seal-content .seal-img .show-on-scroll {
   opacity: 0;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
   transition: 1s ease;
 }
 
@@ -1587,6 +1587,9 @@ header .header-content .is-visible {
     align-items: center;
     flex-direction: column;
   }
+  .belison-faq-container .faq-row .show-on-scroll .faq-accordion .panel {
+    padding: 0rem 1rem;
+  }
   .belison-faq-container .faq-row .show-on-scroll .faq-img {
     width: 100%;
     position: relative;
@@ -1610,6 +1613,13 @@ header .header-content .is-visible {
     height: 300px;
     transition: 1s ease;
   }
+  .belison-faq-container .row1 .show-on-scroll {
+    transform: translateX(40%);
+  }
+  .belison-faq-container .row1 .is-visible {
+    transform: translateX(0%);
+    transition-delay: 0s;
+  }
   .belison-faq-container .row2 .show-on-scroll .faq-img,
   .belison-faq-container .row3 .show-on-scroll .faq-img {
     margin-top: 1rem;
@@ -1617,6 +1627,12 @@ header .header-content .is-visible {
   .belison-faq-container .row2 .show-on-scroll .faq-img .img-wrapper,
   .belison-faq-container .row3 .show-on-scroll .faq-img .img-wrapper {
     border: unset;
+  }
+  .belison-faq-container .row3 .show-on-scroll {
+    transform: translateX(40%);
+  }
+  .belison-faq-container .row3 .is-visible {
+    transform: translateX(0%);
   }
   .belison-geo-container {
     padding: 5rem 0rem;
@@ -1627,25 +1643,47 @@ header .header-content .is-visible {
     grid-template-rows: 1fr;
   }
   .belison-geo-container .geo-grid-container .grid {
-    padding: 0rem 0rem 1rem 1rem;
+    padding: 0rem 1rem 1rem 1rem;
   }
   .belison-geo-container .geo-grid-container .grid1 {
     grid-column: unset;
   }
+  .belison-geo-container .geo-grid-container .grid1 .is-visible {
+    transition-delay: 0s;
+  }
   .belison-geo-container .geo-grid-container .grid2 {
     grid-column: unset;
+  }
+  .belison-geo-container .geo-grid-container .grid2 .is-visible {
+    transition-delay: 0s;
   }
   .belison-geo-container .geo-grid-container .grid3 {
     grid-column: unset;
   }
+  .belison-geo-container .geo-grid-container .grid3 .is-visible {
+    transition-delay: 0s;
+  }
   .belison-geo-container .geo-grid-container .grid4 {
     grid-column: unset;
+  }
+  .belison-geo-container .geo-grid-container .grid4 .is-visible {
+    transition-delay: 0s;
   }
   .belison-geo-container .geo-grid-container .grid5 {
     grid-column: unset;
   }
+  .belison-geo-container .geo-grid-container .grid5 .is-visible {
+    transition-delay: 0s;
+  }
   .belison-seal-container {
     padding: 3rem 0rem;
+  }
+  .belison-seal-container .seal-content .seal-text {
+    width: 100%;
+  }
+  .belison-seal-container .seal-content .seal-text .show-on-scroll {
+    opacity: 1;
+    transform: translateY(0%);
   }
   .officials-container .officials-content {
     width: 100%;
@@ -1683,6 +1721,7 @@ header .header-content .is-visible {
   }
   .timeline-container .timeline-descript p {
     padding: 0rem 1rem;
+    text-align: center;
   }
   .timeline-container .wrapper {
     padding: 0rem 0rem;
