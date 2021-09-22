@@ -319,6 +319,7 @@ nav {
 ##Screen = B/w 1200px to 1450px
 */
 /** @format */
+/** @format */
 footer {
   width: 100%;
   padding-top: 2rem;
@@ -375,20 +376,23 @@ footer .top-footer .site-links-container .site-links {
   margin-top: 1rem;
 }
 
-footer .top-footer .site-links-container .site-links .links1, footer .top-footer .site-links-container .site-links .links2 {
+footer .top-footer .site-links-container .site-links .links1,
+footer .top-footer .site-links-container .site-links .links2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-footer .top-footer .site-links-container .site-links .links1 a, footer .top-footer .site-links-container .site-links .links2 a {
+footer .top-footer .site-links-container .site-links .links1 a,
+footer .top-footer .site-links-container .site-links .links2 a {
   color: #8c979e;
-  margin: .5rem 0rem;
-  transition: .5s ease;
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
 }
 
-footer .top-footer .site-links-container .site-links .links1 a:hover, footer .top-footer .site-links-container .site-links .links2 a:hover {
+footer .top-footer .site-links-container .site-links .links1 a:hover,
+footer .top-footer .site-links-container .site-links .links2 a:hover {
   color: white;
 }
 
@@ -413,20 +417,23 @@ footer .top-footer .reference-container .references-links {
   margin-top: 1rem;
 }
 
-footer .top-footer .reference-container .references-links .links1, footer .top-footer .reference-container .references-links .links2 {
+footer .top-footer .reference-container .references-links .links1,
+footer .top-footer .reference-container .references-links .links2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-footer .top-footer .reference-container .references-links .links1 a, footer .top-footer .reference-container .references-links .links2 a {
+footer .top-footer .reference-container .references-links .links1 a,
+footer .top-footer .reference-container .references-links .links2 a {
   color: #8c979e;
-  margin: .5rem 0rem;
-  transition: .5s ease;
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
 }
 
-footer .top-footer .reference-container .references-links .links1 a:hover, footer .top-footer .reference-container .references-links .links2 a:hover {
+footer .top-footer .reference-container .references-links .links1 a:hover,
+footer .top-footer .reference-container .references-links .links2 a:hover {
   color: white;
 }
 
@@ -446,7 +453,7 @@ footer .bottom-footer {
 }
 
 footer .bottom-footer p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 footer .bottom-footer span {
@@ -470,7 +477,7 @@ footer .bottom-footer span:hover {
   }
   footer .top-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -502,11 +509,9 @@ footer .bottom-footer span:hover {
   footer .top-footer .reference-container {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
-
   }
   footer .top-footer .reference-container .references-links {
     width: 100%;
@@ -516,19 +521,18 @@ footer .bottom-footer span:hover {
     flex-direction: column;
     margin-top: 1rem;
   }
-  footer .top-footer .reference-container .references-links .links1{
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
+  footer .top-footer .reference-container .references-links .links2 {
     text-align: center;
   }
-  footer .top-footer .reference-container .references-links .links2 {
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = 481px to 767px
+*/
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+  footer .top-footer {
     width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
   }
 }
 
@@ -1058,91 +1062,6 @@ header .header-content .show-on-scroll p {
   grid-row: unset;
 }
 
-.bel-nature .grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 400px);
-  gap: 1rem;
-}
-
-.bel-nature .grid-wrapper .grid2 {
-  grid-column: 2/4;
-}
-
-.bel-nature .grid-wrapper .grid6 {
-  grid-column: 3/4;
-}
-
-.bel-nature .grid-wrapper .grid8 {
-  grid-column: 1/3;
-  grid-row: 3/4;
-}
-
-.bel-nature .grid-wrapper .grid12 {
-  grid-column: 3/4;
-}
-
-.bel-nature .grid-wrapper .grid13 {
-  grid-row: 5/6;
-  grid-column: 2/4;
-}
-
-.bel-nature .grid-wrapper .grid14 {
-  grid-row: 6/7;
-  grid-column: 1/3;
-}
-
-.bel-WayofLife .grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, 420px);
-  gap: 1rem;
-}
-
-.bel-WayofLife .grid-wrapper .grid2 {
-  grid-column: 2/3;
-}
-
-.bel-WayofLife .grid-wrapper .grid6 {
-  grid-column: 3/4;
-}
-
-.bel-WayofLife .grid-wrapper .grid8 {
-  grid-row: 4/5;
-}
-
-.bel-WayofLife .grid-wrapper .grid13 {
-  grid-row: 5/7;
-}
-
-.bel-WayofLife .grid-wrapper .grid14 {
-  grid-column: 2/3;
-}
-
-.bel-WayofLife .grid-wrapper .grid19 {
-  grid-column: 1/2;
-  grid-row: 7/8;
-}
-
-.bel-WayofLife .grid-wrapper .grid24 {
-  grid-column: 3/4;
-}
-
-.bel-WayofLife .grid-wrapper .grid25 {
-  grid-row: 9/11;
-  grid-column: 1/2;
-}
-
-.bel-WayofLife .grid-wrapper .grid26 {
-  grid-column: 2/3;
-  grid-row: 9/11;
-}
-
-.bel-WayofLife .grid-wrapper .vid-container {
-  border: 1px solid red;
-  margin-top: 3rem;
-}
-
 /**
  * /* 
  *   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -1231,10 +1150,65 @@ header .header-content .show-on-scroll p {
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = 481px to 767px
 */
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+  header .header-content {
+    width: 85%;
+  }
+  header .header-content .show-on-scroll {
+    padding: 4rem  0rem;
+  }
+}
+
 /* 
 ##Device = Tablets, Ipads (portrait)
 ##Screen =  768px to 1024px
 */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  header .header-content {
+    width: 85%;
+  }
+  header .header-content .show-on-scroll {
+    padding: 4rem  0rem;
+  }
+  .grid-container .title-descript {
+    width: 80%;
+  }
+  .grid-container .title-descript .show-on-scroll {
+    padding: 2rem;
+  }
+  .Acacia-Muni .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap: 1rem;
+  }
+  .Acacia-Muni .vid-container .iframe {
+    width: 55%;
+  }
+  .sinaja-bridge .grid-wrapper, .Cemburio .grid-wrapper, .Gabaldon .grid-wrapper, .pagunsan .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 1rem;
+  }
+  .rizal-monu .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 350px);
+    gap: 1rem;
+  }
+  .rizal-monu .grid-wrapper .grid {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .rizal-monu .grid-wrapper .grid1 {
+    grid-row: 1/3;
+  }
+  .rizal-monu .grid-wrapper .grid3 {
+    grid-row: 2/4;
+  }
+}
+
 /* 
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
