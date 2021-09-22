@@ -1553,7 +1553,7 @@ main {
     margin-left: 0rem;
   }
   .cultural-container .content-wrapper .tangible {
-    width: 90%;
+    width: 95%;
     height: 300px;
     margin-bottom: 35rem;
     display: flex;
@@ -1565,16 +1565,22 @@ main {
     width: 100%;
     height: 100%;
     margin-left: 0rem;
+    opacity: 1;
+    transform: translate(0%, 0%);
   }
   .cultural-container .content-wrapper .tangible .show-on-scroll .content {
     width: 100%;
-    padding: 2rem 0rem 2rem 0rem;
     position: relative;
     top: 0%;
     left: 0%;
     transform: translateY(0%);
     z-index: 1;
-    margin-bottom: 10rem;
+    margin: 3rem 0rem 10rem 0rem;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll .content .show-on-scroll {
+    opacity: 1;
+    padding: 0rem auto;
+    transform: translate(0%, 0%);
   }
   .cultural-container .content-wrapper .intangible {
     width: 93%;
@@ -1590,6 +1596,8 @@ main {
     width: 100%;
     height: 100%;
     margin-left: 0rem;
+    opacity: 1;
+    transform: translate(0%, 0%);
   }
   .cultural-container .content-wrapper .intangible .show-on-scroll .content {
     width: 100%;
@@ -1603,6 +1611,10 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll .content .show-on-scroll {
+    opacity: 1;
+    transform: translate(0%, 0%);
   }
   .ecotourism-container {
     padding: 5rem 0rem 90rem 0rem;
@@ -1621,6 +1633,9 @@ main {
   }
   .ecotourism-container .wrapper .title {
     width: 90%;
+  }
+  .ecotourism-container .wrapper .title p {
+    text-align: center;
   }
   .ecotourism-container .wrapper .main-img {
     width: 85%;
@@ -1677,6 +1692,62 @@ main {
   .churches-container .text-wrapper .church-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 300px);
+  }
+  .churches-container .text-wrapper .church-grid .grid2 .is-visible {
+    transition-delay: 0s;
+  }
+  .churches-container .text-wrapper .church-grid .grid3 .is-visible {
+    transition-delay: 0s;
+  }
+  .churches-container .text-wrapper .church-grid .grid5 .is-visible {
+    transition-delay: .5s;
+  }
+  .churches-container .text-wrapper .church-grid .grid6 .show-on-scroll {
+    background: #282828 url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: .8s ease;
+  }
+  .churches-container .text-wrapper .church-grid .grid6 .is-visible {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1s;
+  }
+  .churches-container .text-wrapper .church-grid .grid7 .show-on-scroll {
+    background: #282828 url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: .8s ease;
+  }
+  .churches-container .text-wrapper .church-grid .grid7 .is-visible {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .churches-container .text-wrapper .church-grid .grid8 .show-on-scroll {
+    background: #282828 url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: .8s ease;
+  }
+  .churches-container .text-wrapper .church-grid .grid8 .is-visible {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: .5s;
+  }
+  .churches-container .text-wrapper .church-grid .grid9 .show-on-scroll {
+    background: #282828 url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: .8s ease;
+  }
+  .churches-container .text-wrapper .church-grid .grid9 .is-visible {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1s;
   }
 }
 
