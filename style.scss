@@ -328,20 +328,20 @@ header {
           filter: brightness(100%);
         }
         .slide1 {
-          background: url('./Image/BelisonNature/BelisonBeach1.jpg')
+          background: url('./Image/Intangeble/Biray/61922695_652420308564488_939560135070580736_n.jpg')
             no-repeat center;
           background-size: cover;
           animation: fadein 15s infinite ease;
         }
         .slide2 {
-          background: url('./Image/BelisonNature/BelisonMountain2.jpg')
+           background: url('./Image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg')
             no-repeat center;
           background-size: cover;
           animation: fadein2 15s infinite ease;
         }
         .slide3 {
-          background: url('./Image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg')
-            no-repeat center;
+          background: url('./Image/Intangeble/Lin-Ay/17201060_1317230205029611_5864868119518254367_n.jpg')
+          no-repeat center;
           background-size: cover;
           animation: fadein3 15s infinite ease;
         }
@@ -646,7 +646,7 @@ header {
           margin-bottom: 1rem;
         }
         .right-block {
-          background: url(../BelisonWebsite/Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg)
+          background: url('./Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg')
             no-repeat center;
           background-size: cover;
           height: 420px;
@@ -657,13 +657,20 @@ header {
     .about2 {
       .show-on-scroll {
         @include flexBox(center, center, column-reverse);
+        transform: scale(0,0);
         .right-block {
           padding: 1rem 0rem;
           @include flexBox(center, center, column);
           text-align: center;
         }
       }
+      .is-visible {
+        transform: scale(1,1);
+      }
     }
+
+  
+  
 
     .about3 {
       .left-block {
@@ -988,6 +995,13 @@ header {
   .about-portal-container {
     .about-block {
       width: 90%;
+    }
+    .about1{
+    .left-block{
+      p{
+        line-height: 1.5;
+      }
+    }
     }
     .about3 {
       .right-block {

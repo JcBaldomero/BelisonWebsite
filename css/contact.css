@@ -4,7 +4,8 @@
   padding: 1rem;
   border-radius: 50px;
   background: #282828;
-  box-shadow: inset 7px 7px 15px #222222, inset -7px -7px 15px #2e2e2e;
+  box-shadow: inset 7px 7px 15px #222222,
+ inset -7px -7px 15px #2e2e2e;
   color: #dfc15e;
   transition: .4s ease;
   cursor: pointer;
@@ -12,7 +13,8 @@
 
 .contact-details-container .detail-wrapper .contact-details .show-on-scroll .contact-socials .social .social-icon i:hover {
   background: linear-gradient(145deg, #2b2b2b, #242424);
-  box-shadow: 7px 7px 15px #222222, -7px -7px 15px #2e2e2e;
+  box-shadow: 7px 7px 15px #222222,
+ -7px -7px 15px #2e2e2e;
   color: white;
 }
 
@@ -36,7 +38,8 @@
   padding: 1rem;
   border-radius: 50px;
   background: #282828;
-  box-shadow: inset 7px 7px 15px #222222, inset -7px -7px 15px #2e2e2e;
+  box-shadow: inset 7px 7px 15px #222222,
+ inset -7px -7px 15px #2e2e2e;
   color: #dfc15e;
   transition: .4s ease;
   cursor: pointer;
@@ -44,7 +47,8 @@
 
 .contact-details-container .detail-wrapper .contact-details .show-on-scroll .contact-socials .social .social-icon i:hover {
   background: linear-gradient(145deg, #2b2b2b, #242424);
-  box-shadow: 7px 7px 15px #222222, -7px -7px 15px #2e2e2e;
+  box-shadow: 7px 7px 15px #222222,
+ -7px -7px 15px #2e2e2e;
   color: white;
 }
 
@@ -385,7 +389,8 @@ nav {
   padding: 1rem;
   border-radius: 50px;
   background: #282828;
-  box-shadow: inset 7px 7px 15px #222222, inset -7px -7px 15px #2e2e2e;
+  box-shadow: inset 7px 7px 15px #222222,
+ inset -7px -7px 15px #2e2e2e;
   color: #dfc15e;
   transition: .4s ease;
   cursor: pointer;
@@ -393,7 +398,8 @@ nav {
 
 .contact-details-container .detail-wrapper .contact-details .show-on-scroll .contact-socials .social .social-icon i:hover {
   background: linear-gradient(145deg, #2b2b2b, #242424);
-  box-shadow: 7px 7px 15px #222222, -7px -7px 15px #2e2e2e;
+  box-shadow: 7px 7px 15px #222222,
+ -7px -7px 15px #2e2e2e;
   color: white;
 }
 
@@ -563,7 +569,7 @@ footer .bottom-footer span:hover {
   }
   footer .top-footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -595,17 +601,33 @@ footer .bottom-footer span:hover {
   footer .top-footer .reference-container {
     display: flex;
     justify-content: center;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
+
   }
   footer .top-footer .reference-container .references-links {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 1rem;
+  }
+  footer .top-footer .reference-container .references-links .links1{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer .top-footer .reference-container .references-links .links2 {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -904,7 +926,8 @@ main {
   width: 75%;
   padding: 3rem 2rem;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: 33px 33px 100px #d9d9d9, -33px -33px 100px #ffffff;
+  box-shadow: 33px 33px 100px #d9d9d9,
+ -33px -33px 100px #ffffff;
 }
 
 .contact-form-container .contact-form .show-on-scroll form h2 {
@@ -1281,7 +1304,8 @@ main {
     width: 75%;
     padding: 3rem 2rem;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow: 33px 33px 100px #d9d9d9, -33px -33px 100px #ffffff;
+    box-shadow: 33px 33px 100px #d9d9d9,
+ -33px -33px 100px #ffffff;
   }
   .contact-form-container .contact-form .show-on-scroll form h2 {
     color: #dfc15e;
