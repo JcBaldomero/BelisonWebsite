@@ -265,7 +265,7 @@ header {
     .show-on-scroll {
       @include flexBox(center, center, row);
       opacity: 0;
-      transform: translateY(100%);
+      transform: translateY(70%);
       transition: 1s ease;
       .faq-accordion {
         h2 {

@@ -803,7 +803,7 @@ header .header-content .show-on-scroll img {
 }
 
 header .header-content .show-on-scroll h1 {
-  font-size: clamp(1.5rem, 4rem, 5vw);
+  font-size: clamp(2rem, 4rem, 5vw);
   color: #dfc15e;
   text-shadow: 2px 1px 4px black;
 }
