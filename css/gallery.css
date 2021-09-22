@@ -1702,52 +1702,14 @@ main {
   .churches-container .text-wrapper .church-grid .grid5 .is-visible {
     transition-delay: .5s;
   }
-  .churches-container .text-wrapper .church-grid .grid6 .show-on-scroll {
-    background: #282828 url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
-    background-size: cover;
-    opacity: 0;
-    transform: translateY(50%);
-    transition: .8s ease;
-  }
   .churches-container .text-wrapper .church-grid .grid6 .is-visible {
-    opacity: 1;
-    transform: translateY(0%);
-    transition-delay: 1s;
-  }
-  .churches-container .text-wrapper .church-grid .grid7 .show-on-scroll {
-    background: #282828 url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
-    background-size: cover;
-    opacity: 0;
-    transform: translateY(50%);
-    transition: .8s ease;
-  }
-  .churches-container .text-wrapper .church-grid .grid7 .is-visible {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  .churches-container .text-wrapper .church-grid .grid8 .show-on-scroll {
-    background: #282828 url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
-    background-size: cover;
-    opacity: 0;
-    transform: translateY(50%);
-    transition: .8s ease;
+    transition-delay: 0s;
   }
   .churches-container .text-wrapper .church-grid .grid8 .is-visible {
-    opacity: 1;
-    transform: translateY(0%);
-    transition-delay: .5s;
-  }
-  .churches-container .text-wrapper .church-grid .grid9 .show-on-scroll {
-    background: #282828 url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
-    background-size: cover;
-    opacity: 0;
-    transform: translateY(50%);
-    transition: .8s ease;
+    transition-delay: 0s;
   }
   .churches-container .text-wrapper .church-grid .grid9 .is-visible {
-    opacity: 1;
-    transform: translateY(0%);
-    transition-delay: 1s;
+    transition-delay: 0s;
   }
 }
 

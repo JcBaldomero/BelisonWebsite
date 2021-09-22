@@ -987,58 +987,22 @@ main{
             }
     }
     .grid6{
-        .show-on-scroll{
-            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
-            background-size: cover;
-            opacity: 0;
-            transform: translateY(50%);
-            transition: .8s ease;
-            }
             .is-visible{
-                opacity: 1;
-                transform: translateY(0%);
-                transition-delay: 1s;
+                transition-delay: 0s;
             }
     }
-    .grid7{
-        .show-on-scroll{
-            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
-            background-size: cover;
-            opacity: 0;
-            transform: translateY(50%);
-            transition: .8s ease;
-            }
-            .is-visible{
-                opacity: 1;
-                transform: translateY(0%);
-            }
-    }
+
     .grid8{
-        .show-on-scroll{
-            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
-            background-size: cover;
-            opacity: 0;
-            transform: translateY(50%);
-            transition: .8s ease;
-            }
+      
             .is-visible{
-                opacity: 1;
-                transform: translateY(0%);
-                transition-delay: .5s;
+                
+                transition-delay: 0s;
             }
     }
     .grid9{
-        .show-on-scroll{
-            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
-            background-size: cover;
-            opacity: 0;
-            transform: translateY(50%);
-            transition: .8s ease;
-            }
+        
             .is-visible{
-                opacity: 1;
-                transform: translateY(0%);
-                transition-delay: 1s;
+                transition-delay: 0s;
             }
     }
     
