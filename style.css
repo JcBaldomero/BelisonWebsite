@@ -1414,27 +1414,11 @@ header .header-content .is-visible {
   }
   .true-belison-container .true-accordion {
     width: 100%;
-    margin: 3rem 0rem 0rem 0rem;
+    margin-left: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-  }
-  .true-belison-container .true-accordion .show-on-scroll {
-    width: 90%;
-    height: 870px;
-  }
-  .true-belison-container .true-accordion .show-on-scroll .img .img-text {
-    padding: 0rem 0.5rem;
-    opacity: 1;
-  }
-  .true-belison-container .true-accordion .show-on-scroll .img .img-text h2,
-  .true-belison-container .true-accordion .show-on-scroll .img .img-text p {
-    text-shadow: 1px 1px 3px rgba(12, 12, 12, 0.671);
-  }
-  .true-belison-container .true-accordion .show-on-scroll .img .img-text:hover .img-text {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.473);
+    flex-direction: column;
   }
   .about-portal-container {
     padding: 3rem 0rem;

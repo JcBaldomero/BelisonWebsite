@@ -608,31 +608,12 @@ header {
         }
       }
     }
-
     .true-accordion {
       width: 100%;
-      margin: 3rem 0rem 0rem 0rem;
-      @include flexBox(center, center, row);
-      .show-on-scroll {
-        width: 90%;
-        height: 870px;
-        .img {
-          .img-text {
-            padding: 0rem 0.5rem;
-            opacity: 1;
-            h2,
-            p {
-              text-shadow: 1px 1px 3px rgba(12, 12, 12, 0.671);
-            }
-
-            &:hover .img-text {
-              opacity: 1;
-              background-color: rgba(0, 0, 0, 0.473);
-            }
-          }
-        }
-      }
+      margin-left: 0rem;
+      @include flexBox(center, center, column); 
     }
+ 
   }
 
   //
