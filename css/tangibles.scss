@@ -403,45 +403,11 @@ header{
     
         }
     }
-    
-    .ocean-view{
-        .grid-wrapper{
-            @include grid(repeat(2,1fr),1fr,1rem);
-    
-        }
+    .mt-guino,.Acacia-Muni,.sinaja-bridge,.Cemburio,.Gabaldon,.pagunsan{
+    .grid-wrapper{
+        @include grid(repeat(2,1fr),repeat(4,150px),1rem);
     }
-    
-    .santa-fe{
-        .grid-wrapper{
-            @include grid(repeat(2,1fr),1fr,1rem);
-            .grid{
-                grid-column: unset;
-                grid-row: unset;
-            }
-        }
-    }
-    
-    .bel-nature{
-        .grid-wrapper{
-            @include grid(repeat(2,1fr),1fr,1rem);            
-            
-            .grid8{
-                grid-column: unset;
-                grid-row: unset;
-            }
-        }
-    }
-    
-    .bel-WayofLife{
-        .grid-wrapper{
-            @include grid(repeat(2,1fr),1fr,1rem);        
-         
-            .grid26{
-                grid-column: unset;
-                grid-row: unset;
-            }
-        }
-    }
+}
 }
 
 /* 
@@ -493,7 +459,7 @@ header{
 
   .Acacia-Muni{
     .grid-wrapper{
-        @include grid(repeat(3,1fr),repeat(4,300px),1rem);
+        @include grid(repeat(3,1fr),repeat(4,250px),1rem);
     }
     .vid-container{
         .iframe{
@@ -503,14 +469,14 @@ header{
 }
 .sinaja-bridge, .Cemburio, .Gabaldon, .pagunsan{
     .grid-wrapper{
-        @include grid(repeat(3,1fr),repeat(2,250px),1rem);
+        @include grid(repeat(3,1fr),repeat(2,150px),1rem);
    
     }
 }
 .rizal-monu{
 
     .grid-wrapper{
-        @include grid(repeat(2,1fr),repeat(5,350px),1rem);
+        @include grid(repeat(2,1fr),repeat(5,300px),1rem);
         .grid{
             grid-column: unset;
             grid-row: unset;

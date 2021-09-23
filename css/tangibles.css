@@ -477,7 +477,7 @@ footer .bottom-footer span:hover {
   }
   footer .top-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -509,11 +509,9 @@ footer .bottom-footer span:hover {
   footer .top-footer .reference-container {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
-
   }
   footer .top-footer .reference-container .references-links {
     width: 100%;
@@ -523,18 +521,7 @@ footer .bottom-footer span:hover {
     flex-direction: column;
     margin-top: 1rem;
   }
-  footer .top-footer .reference-container .references-links .links1{
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-  }
   footer .top-footer .reference-container .references-links .links2 {
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
     text-align: center;
   }
 }
@@ -1121,41 +1108,11 @@ header .header-content .show-on-scroll p {
     width: 80%;
     margin: 1rem 0rem;
   }
-  .ocean-view .grid-wrapper {
+  .mt-guino .grid-wrapper, .Acacia-Muni .grid-wrapper, .sinaja-bridge .grid-wrapper, .Cemburio .grid-wrapper, .Gabaldon .grid-wrapper, .pagunsan .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(4, 150px);
     gap: 1rem;
-  }
-  .santa-fe .grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    gap: 1rem;
-  }
-  .santa-fe .grid-wrapper .grid {
-    grid-column: unset;
-    grid-row: unset;
-  }
-  .bel-nature .grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    gap: 1rem;
-  }
-  .bel-nature .grid-wrapper .grid8 {
-    grid-column: unset;
-    grid-row: unset;
-  }
-  .bel-WayofLife .grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    gap: 1rem;
-  }
-  .bel-WayofLife .grid-wrapper .grid26 {
-    grid-column: unset;
-    grid-row: unset;
   }
 }
 
@@ -1192,7 +1149,7 @@ header .header-content .show-on-scroll p {
   .Acacia-Muni .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(4, 250px);
     gap: 1rem;
   }
   .Acacia-Muni .vid-container .iframe {
@@ -1201,13 +1158,13 @@ header .header-content .show-on-scroll p {
   .sinaja-bridge .grid-wrapper, .Cemburio .grid-wrapper, .Gabaldon .grid-wrapper, .pagunsan .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 250px);
+    grid-template-rows: repeat(2, 150px);
     gap: 1rem;
   }
   .rizal-monu .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 350px);
+    grid-template-rows: repeat(5, 300px);
     gap: 1rem;
   }
   .rizal-monu .grid-wrapper .grid {
