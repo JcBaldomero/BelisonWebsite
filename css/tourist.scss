@@ -407,7 +407,7 @@ header{
     
     .bel-nature{
         .grid-wrapper{
-            @include grid(repeat(2,1fr),1fr,1rem);            
+            @include grid(repeat(2,1fr),repeat(7, 150px),1rem);
             
             .grid8{
                 grid-column: unset;
@@ -418,7 +418,7 @@ header{
     
     .bel-WayofLife{
         .grid-wrapper{
-            @include grid(repeat(2,1fr),1fr,1rem);        
+            @include grid(repeat(2,1fr),repeat(14, 150px),1rem);
          
             .grid26{
                 grid-column: unset;

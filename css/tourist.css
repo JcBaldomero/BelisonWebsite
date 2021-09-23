@@ -1101,7 +1101,7 @@ header .header-content .show-on-scroll p {
   .bel-nature .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(7, 150px);
     gap: 1rem;
   }
   .bel-nature .grid-wrapper .grid8 {
@@ -1111,7 +1111,7 @@ header .header-content .show-on-scroll p {
   .bel-WayofLife .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(14, 150px);
     gap: 1rem;
   }
   .bel-WayofLife .grid-wrapper .grid26 {
