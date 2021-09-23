@@ -1108,10 +1108,22 @@ header .header-content .show-on-scroll p {
     width: 80%;
     margin: 1rem 0rem;
   }
-  .mt-guino .grid-wrapper, .Acacia-Muni .grid-wrapper, .sinaja-bridge .grid-wrapper, .Cemburio .grid-wrapper, .Gabaldon .grid-wrapper, .pagunsan .grid-wrapper {
+  .mt-guino .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 150px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1rem;
+  }
+  .Acacia-Muni .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 250px);
+    gap: 1rem;
+  }
+  .sinaja-bridge .grid-wrapper, .Cemburio .grid-wrapper, .Gabaldon .grid-wrapper, .pagunsan .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 150px);
     gap: 1rem;
   }
 }

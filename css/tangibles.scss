@@ -403,9 +403,20 @@ header{
     
         }
     }
-    .mt-guino,.Acacia-Muni,.sinaja-bridge,.Cemburio,.Gabaldon,.pagunsan{
+     
+        .mt-guino{
+        .grid-wrapper{
+            @include grid(repeat(2,1fr),repeat(3,200px),1rem);
+        }
+        }
+    .Acacia-Muni{
     .grid-wrapper{
-        @include grid(repeat(2,1fr),repeat(4,150px),1rem);
+        @include grid(repeat(2,1fr),repeat(4,250px),1rem);
+    }
+    }
+    .sinaja-bridge,.Cemburio,.Gabaldon,.pagunsan{
+    .grid-wrapper{
+        @include grid(repeat(2,1fr),repeat(3,150px),1rem);
     }
 }
 }
