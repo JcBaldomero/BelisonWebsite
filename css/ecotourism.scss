@@ -418,15 +418,15 @@ header {
     }
   }
 
-  .ocean-view {
+  .amor{
     .grid-wrapper {
-      @include grid(repeat(2, 1fr), 1fr, 1rem);
+      @include grid(repeat(2, 1fr), repeat(5,250px), 1rem);
     }
   }
 
-  .santa-fe {
+  .turo {
     .grid-wrapper {
-      @include grid(repeat(2, 1fr), 1fr, 1rem);
+      @include grid(repeat(2, 1fr), repeat(15,200px), 1rem);
       .grid {
         grid-column: unset;
         grid-row: unset;
@@ -434,9 +434,9 @@ header {
     }
   }
 
-  .bel-nature {
+  .eco {
     .grid-wrapper {
-      @include grid(repeat(2, 1fr), 1fr, 1rem);
+      @include grid(repeat(2, 1fr), repeat(9,200px), 1rem);
 
       .grid8 {
         grid-column: unset;
@@ -445,16 +445,7 @@ header {
     }
   }
 
-  .bel-WayofLife {
-    .grid-wrapper {
-      @include grid(repeat(2, 1fr), 1fr, 1rem);
-
-      .grid26 {
-        grid-column: unset;
-        grid-row: unset;
-      }
-    }
-  }
+ 
 }
 
 /* 
@@ -507,6 +498,36 @@ header {
 
 
     }
+}
+.amor {
+  .title-descript {
+    width: 55%;
+  }
+  .grid-wrapper {
+    @include grid(repeat(3, 1fr), repeat(1, 200px), 1rem);
+  
+  }
+
+}
+
+.turo {
+  .title-descript{
+    width: 65%;
+}
+  .grid-wrapper {
+    @include grid(repeat(3, 1fr), repeat(15 , 200px), 1rem);
+    
+  }
+}
+
+.eco {
+  .title-descript{
+      width: 65%;
+
+  }
+  .grid-wrapper {
+    @include grid(repeat(3, 1fr), repeat(9, 200px), 1rem);
+  }
 }
 }
 

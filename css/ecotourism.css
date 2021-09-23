@@ -319,6 +319,7 @@ nav {
 ##Screen = B/w 1200px to 1450px
 */
 /** @format */
+/** @format */
 footer {
   width: 100%;
   padding-top: 2rem;
@@ -375,20 +376,23 @@ footer .top-footer .site-links-container .site-links {
   margin-top: 1rem;
 }
 
-footer .top-footer .site-links-container .site-links .links1, footer .top-footer .site-links-container .site-links .links2 {
+footer .top-footer .site-links-container .site-links .links1,
+footer .top-footer .site-links-container .site-links .links2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-footer .top-footer .site-links-container .site-links .links1 a, footer .top-footer .site-links-container .site-links .links2 a {
+footer .top-footer .site-links-container .site-links .links1 a,
+footer .top-footer .site-links-container .site-links .links2 a {
   color: #8c979e;
-  margin: .5rem 0rem;
-  transition: .5s ease;
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
 }
 
-footer .top-footer .site-links-container .site-links .links1 a:hover, footer .top-footer .site-links-container .site-links .links2 a:hover {
+footer .top-footer .site-links-container .site-links .links1 a:hover,
+footer .top-footer .site-links-container .site-links .links2 a:hover {
   color: white;
 }
 
@@ -413,20 +417,23 @@ footer .top-footer .reference-container .references-links {
   margin-top: 1rem;
 }
 
-footer .top-footer .reference-container .references-links .links1, footer .top-footer .reference-container .references-links .links2 {
+footer .top-footer .reference-container .references-links .links1,
+footer .top-footer .reference-container .references-links .links2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
-footer .top-footer .reference-container .references-links .links1 a, footer .top-footer .reference-container .references-links .links2 a {
+footer .top-footer .reference-container .references-links .links1 a,
+footer .top-footer .reference-container .references-links .links2 a {
   color: #8c979e;
-  margin: .5rem 0rem;
-  transition: .5s ease;
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
 }
 
-footer .top-footer .reference-container .references-links .links1 a:hover, footer .top-footer .reference-container .references-links .links2 a:hover {
+footer .top-footer .reference-container .references-links .links1 a:hover,
+footer .top-footer .reference-container .references-links .links2 a:hover {
   color: white;
 }
 
@@ -446,7 +453,7 @@ footer .bottom-footer {
 }
 
 footer .bottom-footer p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 footer .bottom-footer span {
@@ -470,7 +477,7 @@ footer .bottom-footer span:hover {
   }
   footer .top-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -502,11 +509,9 @@ footer .bottom-footer span:hover {
   footer .top-footer .reference-container {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
-
   }
   footer .top-footer .reference-container .references-links {
     width: 100%;
@@ -516,18 +521,7 @@ footer .bottom-footer span:hover {
     flex-direction: column;
     margin-top: 1rem;
   }
-  footer .top-footer .reference-container .references-links .links1{
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-  }
   footer .top-footer .reference-container .references-links .links2 {
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
     text-align: center;
   }
 }
@@ -1147,39 +1141,29 @@ header .header-content .show-on-scroll p {
     width: 80%;
     margin: 1rem 0rem;
   }
-  .ocean-view .grid-wrapper {
+  .amor .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(5, 250px);
     gap: 1rem;
   }
-  .santa-fe .grid-wrapper {
+  .turo .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(15, 200px);
     gap: 1rem;
   }
-  .santa-fe .grid-wrapper .grid {
+  .turo .grid-wrapper .grid {
     grid-column: unset;
     grid-row: unset;
   }
-  .bel-nature .grid-wrapper {
+  .eco .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(9, 200px);
     gap: 1rem;
   }
-  .bel-nature .grid-wrapper .grid8 {
-    grid-column: unset;
-    grid-row: unset;
-  }
-  .bel-WayofLife .grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    gap: 1rem;
-  }
-  .bel-WayofLife .grid-wrapper .grid26 {
+  .eco .grid-wrapper .grid8 {
     grid-column: unset;
     grid-row: unset;
   }
@@ -1223,6 +1207,33 @@ header .header-content .show-on-scroll p {
   }
   .grid-container .vid-container .iframe3 .is-visible {
     transition-delay: 0.6s;
+  }
+  .amor .title-descript {
+    width: 55%;
+  }
+  .amor .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    gap: 1rem;
+  }
+  .turo .title-descript {
+    width: 65%;
+  }
+  .turo .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(15, 200px);
+    gap: 1rem;
+  }
+  .eco .title-descript {
+    width: 65%;
+  }
+  .eco .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 200px);
+    gap: 1rem;
   }
 }
 
