@@ -332,25 +332,22 @@ header {
     }
   }
 
-  .ocean-view {
+  .guino-festi{
     .grid-wrapper {
-      @include grid(repeat(2, 1fr), 1fr, 1rem);
+      @include grid(repeat(2, 1fr), repeat(15, 150px), 1rem);
     }
   }
 
-  .santa-fe {
+  .flores{
     .grid-wrapper {
-      @include grid(repeat(2, 1fr), 1fr, 1rem);
-      .grid {
-        grid-column: unset;
-        grid-row: unset;
-      }
+      @include grid(repeat(2, 1fr), repeat(8, 150px), 1rem);
+
     }
   }
 
-  .bel-nature {
+  .Lin-ay{
     .grid-wrapper {
-      @include grid(repeat(2, 1fr), 1fr, 1rem);
+      @include grid(repeat(2, 1fr), repeat(12, 200px), 1rem);
 
       .grid8 {
         grid-column: unset;
@@ -359,16 +356,7 @@ header {
     }
   }
 
-  .bel-WayofLife {
-    .grid-wrapper {
-      @include grid(repeat(2, 1fr), 1fr, 1rem);
 
-      .grid26 {
-        grid-column: unset;
-        grid-row: unset;
-      }
-    }
-  }
 }
 
 /* 
@@ -377,6 +365,7 @@ header {
 */
 
 @media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+
 }
 
 /* 
@@ -384,6 +373,19 @@ header {
 ##Screen =  768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.grid-container{
+  .title-descript{
+    width: 75%;
+  .show-on-scroll{
+    padding: 1.5rem;
+    text-align: center;
+  }
+  }
+  .grid-wrapper {
+    width: 95%;
+    @include grid(repeat(3, 1fr), 1fr, 1rem);
+  }
+}
 }
 
 /* 
