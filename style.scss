@@ -302,12 +302,13 @@ header {
       .left-block {
         padding: 2rem;
       }
-      .right-block {
-        background: url('./Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg')
-          no-repeat center;
-        background-size: cover;
-        height: 420px;
+      .right-block{
+        img{
+          width: 100%;
+          height: 400px;
+        }
       }
+
     }
     .is-visible {
       opacity: 1;
