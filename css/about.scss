@@ -475,6 +475,12 @@ header {
       height: 250px;
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:50% 5% ;
+      }
     }
     .official-details{
       width: 55%;
@@ -537,10 +543,6 @@ header {
       opacity: 0;
       transform: translateX(-100%);
       transition: 1s ease;
-    .official-img{
-      background: $GreyBg url(../Image/BelisonMunicipalHallEtc/Christopher-Piccio-214x300-1.jpg) no-repeat 15% 5%;
-      background-size: cover;
-    }
     }
     .is-visible{
       opacity: 1;
@@ -555,10 +557,7 @@ header {
         opacity: 0;
         transform: translateX(100%);
         transition: 1s ease;
-        .official-img{
-          background: $GreyBg url(../Image/Placeholders/placeholder-1.png) no-repeat 15% 5%;
-          background-size: cover;
-        }
+  
       .official-details{
         text-align: end;
         padding-right: 2rem;
@@ -577,10 +576,7 @@ header {
       opacity: 0;
       transform: translateX(-100%);
       transition: 1s ease;
-      .official-img{
-        background: $GreyBg url(../Image/Placeholders/placeholder-1.png) no-repeat 15% 5%;
-        background-size: cover;
-      }
+
     }
     .is-visible{
       opacity: 1;
