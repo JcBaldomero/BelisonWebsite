@@ -795,7 +795,7 @@ header .header-content .show-on-scroll p {
   width: 95%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, 400px);
+  grid-template-rows: repeat(10, 350px);
   gap: 1rem;
 }
 
@@ -930,7 +930,7 @@ header .header-content .show-on-scroll p {
 .amor .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 400px);
+  grid-template-rows: repeat(5, 350px);
   gap: 1rem;
 }
 

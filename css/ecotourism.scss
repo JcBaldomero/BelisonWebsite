@@ -116,7 +116,7 @@ header {
   }
   .grid-wrapper {
     width: 95%;
-    @include grid(repeat(3, 1fr), repeat(10, 400px), 1rem);
+    @include grid(repeat(3, 1fr), repeat(10, 350px), 1rem);
     .grid {
       .show-on-scroll {
         width: 100%;
@@ -231,7 +231,7 @@ header {
     width: 55%;
   }
   .grid-wrapper {
-    @include grid(repeat(3, 1fr), repeat(1, 400px), 1rem);
+    @include grid(repeat(3, 1fr), repeat(5, 350px), 1rem);
     .grid {
       grid-column: unset;
       grid-row: unset;
