@@ -306,6 +306,7 @@ header {
         img{
           width: 100%;
           height: 400px;
+          object-fit: cover;
         }
       }
 
@@ -657,10 +658,9 @@ header {
 
         }
         .right-block {
-          background: url('./Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg')
-            no-repeat center;
-          background-size: cover;
-          height: 420px;
+          img{
+            height: 250px
+          }
         }
       }
     }
@@ -669,6 +669,7 @@ header {
       .show-on-scroll {
         @include flexBox(center, center, column-reverse);
         transform: scale(0,0);
+        transition: .5s ease;
         .right-block {
           padding: 1rem 0rem;
           @include flexBox(center, center, column);
