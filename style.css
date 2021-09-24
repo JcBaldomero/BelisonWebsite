@@ -1,32 +1,48 @@
 /** @format */
 /** @format */
-.true-belison-container .true-text .show-on-scroll a, .about-portal-container .about2 .show-on-scroll .right-block a, .about-portal-container .about3 .show-on-scroll .left-block a, .gallery-portal-container .gallery-text .show-on-scroll a, .contact-container .contact-details .show-on-scroll .contact-btn {
+.true-belison-container .true-text .show-on-scroll a,
+.about-portal-container .about2 .show-on-scroll .right-block a,
+.about-portal-container .about3 .show-on-scroll .left-block a,
+.gallery-portal-container .gallery-text .show-on-scroll a,
+.contact-container .contact-details .show-on-scroll .contact-btn {
   border-radius: 5px;
   color: white;
   background-color: #dfc15e;
-  transition: .4s ease;
-  padding: .7rem 2rem;
+  transition: 0.4s ease;
+  padding: 0.7rem 2rem;
   font-weight: bold;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
 }
 
-.true-belison-container .true-text .show-on-scroll a:hover, .about-portal-container .about2 .show-on-scroll .right-block a:hover, .about-portal-container .about3 .show-on-scroll .left-block a:hover, .gallery-portal-container .gallery-text .show-on-scroll a:hover, .contact-container .contact-details .show-on-scroll .contact-btn:hover {
+.true-belison-container .true-text .show-on-scroll a:hover,
+.about-portal-container .about2 .show-on-scroll .right-block a:hover,
+.about-portal-container .about3 .show-on-scroll .left-block a:hover,
+.gallery-portal-container .gallery-text .show-on-scroll a:hover,
+.contact-container .contact-details .show-on-scroll .contact-btn:hover {
   background-color: #282828;
   color: #dfc15e;
 }
 
 /** @format */
-.true-belison-container .true-text .show-on-scroll a, .about-portal-container .about2 .show-on-scroll .right-block a, .about-portal-container .about3 .show-on-scroll .left-block a, .gallery-portal-container .gallery-text .show-on-scroll a, .contact-container .contact-details .show-on-scroll .contact-btn {
+.true-belison-container .true-text .show-on-scroll a,
+.about-portal-container .about2 .show-on-scroll .right-block a,
+.about-portal-container .about3 .show-on-scroll .left-block a,
+.gallery-portal-container .gallery-text .show-on-scroll a,
+.contact-container .contact-details .show-on-scroll .contact-btn {
   border-radius: 5px;
   color: white;
   background-color: #dfc15e;
-  transition: .4s ease;
-  padding: .7rem 2rem;
+  transition: 0.4s ease;
+  padding: 0.7rem 2rem;
   font-weight: bold;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
 }
 
-.true-belison-container .true-text .show-on-scroll a:hover, .about-portal-container .about2 .show-on-scroll .right-block a:hover, .about-portal-container .about3 .show-on-scroll .left-block a:hover, .gallery-portal-container .gallery-text .show-on-scroll a:hover, .contact-container .contact-details .show-on-scroll .contact-btn:hover {
+.true-belison-container .true-text .show-on-scroll a:hover,
+.about-portal-container .about2 .show-on-scroll .right-block a:hover,
+.about-portal-container .about3 .show-on-scroll .left-block a:hover,
+.gallery-portal-container .gallery-text .show-on-scroll a:hover,
+.contact-container .contact-details .show-on-scroll .contact-btn:hover {
   background-color: #282828;
   color: #dfc15e;
 }
@@ -56,7 +72,7 @@ nav {
   margin: 1.5rem 0rem;
   color: #333333;
   font-size: clamp(1.3rem, 2rem, 4vw);
-  transition: .3s ease;
+  transition: 0.3s ease;
   animation: logoAni 1s ease 1;
 }
 
@@ -66,7 +82,7 @@ nav {
 
 .logo i {
   display: none;
-  transition: .5s ease;
+  transition: 0.5s ease;
   font-size: 1.5rem;
 }
 
@@ -100,21 +116,24 @@ nav {
   flex-direction: row;
 }
 
-.navlink-container ul li, .navlink-container ul a {
+.navlink-container ul li,
+.navlink-container ul a {
   margin: 0rem 1rem;
   font-size: clamp(1rem, 1.2rem, 4vw);
   color: #333333;
   font-weight: 200;
   cursor: pointer;
-  transition: .3s ease;
+  transition: 0.3s ease;
   animation: linksAni 1s ease 1;
 }
 
-.navlink-container ul li:hover, .navlink-container ul a:hover {
+.navlink-container ul li:hover,
+.navlink-container ul a:hover {
   color: #dfc15e;
 }
 
-.navlink-container ul li .activelink, .navlink-container ul a .activelink {
+.navlink-container ul li .activelink,
+.navlink-container ul a .activelink {
   color: #dfc15e;
 }
 
@@ -143,7 +162,7 @@ nav {
 }
 
 .dropdown i {
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .dropdown:hover i {
@@ -176,14 +195,16 @@ nav {
   padding-top: 2rem;
 }
 
-.dropdown:hover .dropdwn-content a, .dropdown:hover .dropdwn-content i {
+.dropdown:hover .dropdwn-content a,
+.dropdown:hover .dropdwn-content i {
   font-size: clamp(1rem, 1.1rem, 10rem);
   padding: 1rem 0rem;
   width: 100%;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-.dropdown:hover .dropdwn-content a:hover, .dropdown:hover .dropdwn-content i:hover {
+.dropdown:hover .dropdwn-content a:hover,
+.dropdown:hover .dropdwn-content i:hover {
   color: #dfc15e;
   border-left: 3px solid #dfc15e;
   border-right: 3px solid #dfc15e;
@@ -350,17 +371,25 @@ nav {
 */
 /** @format */
 /** @format */
-.true-belison-container .true-text .show-on-scroll a, .about-portal-container .about2 .show-on-scroll .right-block a, .about-portal-container .about3 .show-on-scroll .left-block a, .gallery-portal-container .gallery-text .show-on-scroll a, .contact-container .contact-details .show-on-scroll .contact-btn {
+.true-belison-container .true-text .show-on-scroll a,
+.about-portal-container .about2 .show-on-scroll .right-block a,
+.about-portal-container .about3 .show-on-scroll .left-block a,
+.gallery-portal-container .gallery-text .show-on-scroll a,
+.contact-container .contact-details .show-on-scroll .contact-btn {
   border-radius: 5px;
   color: white;
   background-color: #dfc15e;
-  transition: .4s ease;
-  padding: .7rem 2rem;
+  transition: 0.4s ease;
+  padding: 0.7rem 2rem;
   font-weight: bold;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
 }
 
-.true-belison-container .true-text .show-on-scroll a:hover, .about-portal-container .about2 .show-on-scroll .right-block a:hover, .about-portal-container .about3 .show-on-scroll .left-block a:hover, .gallery-portal-container .gallery-text .show-on-scroll a:hover, .contact-container .contact-details .show-on-scroll .contact-btn:hover {
+.true-belison-container .true-text .show-on-scroll a:hover,
+.about-portal-container .about2 .show-on-scroll .right-block a:hover,
+.about-portal-container .about3 .show-on-scroll .left-block a:hover,
+.gallery-portal-container .gallery-text .show-on-scroll a:hover,
+.contact-container .contact-details .show-on-scroll .contact-btn:hover {
   background-color: #282828;
   color: #dfc15e;
 }
@@ -600,17 +629,25 @@ footer .bottom-footer span:hover {
 ##Screen = B/w 1200px to 1450px
 */
 /** @format */
-.true-belison-container .true-text .show-on-scroll a, .about-portal-container .about2 .show-on-scroll .right-block a, .about-portal-container .about3 .show-on-scroll .left-block a, .gallery-portal-container .gallery-text .show-on-scroll a, .contact-container .contact-details .show-on-scroll .contact-btn {
+.true-belison-container .true-text .show-on-scroll a,
+.about-portal-container .about2 .show-on-scroll .right-block a,
+.about-portal-container .about3 .show-on-scroll .left-block a,
+.gallery-portal-container .gallery-text .show-on-scroll a,
+.contact-container .contact-details .show-on-scroll .contact-btn {
   border-radius: 5px;
   color: white;
   background-color: #dfc15e;
-  transition: .4s ease;
-  padding: .7rem 2rem;
+  transition: 0.4s ease;
+  padding: 0.7rem 2rem;
   font-weight: bold;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
 }
 
-.true-belison-container .true-text .show-on-scroll a:hover, .about-portal-container .about2 .show-on-scroll .right-block a:hover, .about-portal-container .about3 .show-on-scroll .left-block a:hover, .gallery-portal-container .gallery-text .show-on-scroll a:hover, .contact-container .contact-details .show-on-scroll .contact-btn:hover {
+.true-belison-container .true-text .show-on-scroll a:hover,
+.about-portal-container .about2 .show-on-scroll .right-block a:hover,
+.about-portal-container .about3 .show-on-scroll .left-block a:hover,
+.gallery-portal-container .gallery-text .show-on-scroll a:hover,
+.contact-container .contact-details .show-on-scroll .contact-btn:hover {
   background-color: #282828;
   color: #dfc15e;
 }
@@ -747,19 +784,20 @@ header {
 }
 
 header .slide1 {
-  background: url("./Image/BelisonNature/BelisonBeach1.jpg") no-repeat center;
+  background: url('./Image/BelisonNature/BelisonBeach1.jpg') no-repeat center;
   background-size: cover;
   animation: fade 15s infinite ease;
 }
 
 header .slide2 {
-  background: url("./Image/BelisonNature/BelisonMountain2.jpg") no-repeat center;
+  background: url('./Image/BelisonNature/BelisonMountain2.jpg') no-repeat center;
   background-size: cover;
   animation: fade2 15s infinite ease;
 }
 
 header .slide3 {
-  background: url("./Image/Intangeble/Guinobatan/53518781_2166757243410232_6481788046952890368_n.jpg") no-repeat center;
+  background: url('./Image/Intangeble/Guinobatan/53518781_2166757243410232_6481788046952890368_n.jpg')
+    no-repeat center;
   background-size: cover;
   animation: fade3 15s infinite ease;
 }
@@ -990,22 +1028,25 @@ header .header-content .is-visible {
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img1 {
-  background: url("./Image/Tourist-Spots/OceanView/Belison-Sunset-1.jpg") no-repeat center;
+  background: url('./Image/Tourist-Spots/OceanView/Belison-Sunset-1.jpg')
+    no-repeat center;
   background-size: cover;
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img2 {
-  background: url("./Image/BelisonMunicipalHallEtc/MunicipalHallFrontView.jpg") no-repeat center;
+  background: url('./Image/BelisonMunicipalHallEtc/MunicipalHallFrontView.jpg')
+    no-repeat center;
   background-size: cover;
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img3 {
-  background: url("./Image/Tangible/Mt.Guinotan&Cave/Mt-GuinobatanCave.jpg") no-repeat bottom;
+  background: url('./Image/Tangible/Mt.Guinotan&Cave/Mt-GuinobatanCave.jpg')
+    no-repeat bottom;
   background-size: cover;
 }
 
 .true-belison-container .true-accordion .show-on-scroll .img4 {
-  background: url("./Image/Intangeble/Guinobatan/54434329_2166758403410116_1509170466076491776_n.jpg");
+  background: url('./Image/Intangeble/Guinobatan/54434329_2166758403410116_1509170466076491776_n.jpg');
 }
 
 .true-belison-container .true-accordion .is-visible {
@@ -1101,19 +1142,22 @@ header .header-content .is-visible {
 }
 
 .about-portal-container .about2 .show-on-scroll .left-block .slide1 {
-  background: url("./Image/Intangeble/Biray/61922695_652420308564488_939560135070580736_n.jpg") no-repeat center;
+  background: url('./Image/Intangeble/Biray/61922695_652420308564488_939560135070580736_n.jpg')
+    no-repeat center;
   background-size: cover;
   animation: fadein 15s infinite ease;
 }
 
 .about-portal-container .about2 .show-on-scroll .left-block .slide2 {
-  background: url("./Image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg") no-repeat center;
+  background: url('./Image/Intangeble/Guinobatan/53516228_2166757720076851_5279632872670494720_n.jpg')
+    no-repeat center;
   background-size: cover;
   animation: fadein2 15s infinite ease;
 }
 
 .about-portal-container .about2 .show-on-scroll .left-block .slide3 {
-  background: url("./Image/Intangeble/Lin-Ay/17201060_1317230205029611_5864868119518254367_n.jpg") no-repeat center;
+  background: url('./Image/Intangeble/Lin-Ay/17201060_1317230205029611_5864868119518254367_n.jpg')
+    no-repeat center;
   background-size: cover;
   animation: fadein3 15s infinite ease;
 }
@@ -1169,7 +1213,8 @@ header .header-content .is-visible {
   align-items: center;
   flex-direction: column;
   padding: 5rem 0rem 5rem 0rem;
-  background: url("./Image/BelisonMunicipalHallEtc/Municipal-hallsideView2.jpg") no-repeat center;
+  background: url('./Image/BelisonMunicipalHallEtc/Municipal-hallsideView2.jpg')
+    no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -1258,8 +1303,16 @@ header .header-content .is-visible {
   color: white;
 }
 
-.gallery-portal-container .gallery-slideshow .show-on-scroll .slider .prev:hover,
-.gallery-portal-container .gallery-slideshow .show-on-scroll .slider .next:hover {
+.gallery-portal-container
+  .gallery-slideshow
+  .show-on-scroll
+  .slider
+  .prev:hover,
+.gallery-portal-container
+  .gallery-slideshow
+  .show-on-scroll
+  .slider
+  .next:hover {
   color: #dfc15e;
 }
 
@@ -1460,7 +1513,8 @@ header .header-content .is-visible {
     transform: translate(0%, 0%);
   }
   .about-portal-container .about1 .show-on-scroll .right-block {
-    background: url("./Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg") no-repeat center;
+    background: url('./Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg')
+      no-repeat center;
     background-size: cover;
     height: 420px;
   }
@@ -1621,7 +1675,12 @@ header .header-content .is-visible {
   .true-belison-container .true-accordion .show-on-scroll .img .img-text p {
     text-shadow: 1px 1px 3px rgba(12, 12, 12, 0.671);
   }
-  .true-belison-container .true-accordion .show-on-scroll .img .img-text:hover .img-text {
+  .true-belison-container
+    .true-accordion
+    .show-on-scroll
+    .img
+    .img-text:hover
+    .img-text {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.473);
   }
@@ -1656,7 +1715,8 @@ header .header-content .is-visible {
     margin-bottom: 1rem;
   }
   .about-portal-container .about1 .show-on-scroll .right-block {
-    background: url(../BelisonWebsite/Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg) no-repeat center;
+    background: url(../BelisonWebsite/Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg)
+      no-repeat center;
     background-size: cover;
     height: 420px;
   }
@@ -1808,7 +1868,12 @@ header .header-content .is-visible {
   .true-belison-container .true-accordion .show-on-scroll .img .img-text p {
     text-shadow: 1px 1px 3px rgba(12, 12, 12, 0.671);
   }
-  .true-belison-container .true-accordion .show-on-scroll .img .img-text:hover .img-text {
+  .true-belison-container
+    .true-accordion
+    .show-on-scroll
+    .img
+    .img-text:hover
+    .img-text {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.473);
   }
@@ -1912,7 +1977,12 @@ header .header-content .is-visible {
   .true-belison-container .true-accordion .show-on-scroll .img .img-text p {
     text-shadow: 1px 1px 3px rgba(12, 12, 12, 0.671);
   }
-  .true-belison-container .true-accordion .show-on-scroll .img .img-text:hover .img-text {
+  .true-belison-container
+    .true-accordion
+    .show-on-scroll
+    .img
+    .img-text:hover
+    .img-text {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.473);
   }
