@@ -166,7 +166,7 @@ header {
           max-height: 0;
           transition: max-height 0.2s ease-out;
           p {
-            padding: 1rem 0rem;
+            padding: 1rem 1rem;
             line-height: 1.5;
           }
           a {
@@ -1199,14 +1199,36 @@ header {
   .belison-faq-container {
     .faq-row {
       width: 85%;
+      .show-on-scroll{
+        .faq-img{
+          .img-wrapper{
+            img{
+              object-fit: cover;
+              height: 450px;
+            }
+          }
+        }
+      }
+    }
+    .row1{
+      .show-on-scroll{
+        transform: translateX(-45%);
+      }
+      .is-visible{
+        transform: translateX(0%);
+      }
     }
     .row3{
       .show-on-scroll{
+        transform: translateX(45%);
         .faq-accordion{
           h2{
             margin-left: -.8rem;
           }
         }
+      }
+      .is-visible{
+        transform: translateX(0%);
       }
     }
   }

@@ -865,7 +865,7 @@ header .header-content .is-visible {
 }
 
 .belison-faq-container .faq-row .show-on-scroll .faq-accordion .panel p {
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
   line-height: 1.5;
 }
 
@@ -1937,8 +1937,24 @@ header .header-content .is-visible {
   .belison-faq-container .faq-row {
     width: 85%;
   }
+  .belison-faq-container .faq-row .show-on-scroll .faq-img .img-wrapper img {
+    object-fit: cover;
+    height: 450px;
+  }
+  .belison-faq-container .row1 .show-on-scroll {
+    transform: translateX(-45%);
+  }
+  .belison-faq-container .row1 .is-visible {
+    transform: translateX(0%);
+  }
+  .belison-faq-container .row3 .show-on-scroll {
+    transform: translateX(45%);
+  }
   .belison-faq-container .row3 .show-on-scroll .faq-accordion h2 {
     margin-left: -.8rem;
+  }
+  .belison-faq-container .row3 .is-visible {
+    transform: translateX(0%);
   }
   .belison-geo-container {
     padding: 5rem 0rem;
