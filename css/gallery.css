@@ -575,12 +575,19 @@ footer .bottom-footer span:hover {
     align-items: center;
     text-align: center;
   }
+  footer .top-footer .reference-container .references-links .links1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   footer .top-footer .reference-container .references-links .links2 {
     width: 100%;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    flex-direction: column;
   }
 }
 
