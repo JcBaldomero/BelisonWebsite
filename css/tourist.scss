@@ -358,6 +358,8 @@ header{
             width: 85%;
         .show-on-scroll{
             padding: 2rem 1rem;
+            transform: translate(0%,0%);
+            opacity: 1;
         p{
             text-align: center;
         }
@@ -370,6 +372,9 @@ header{
         .grid{
            grid-column: unset;
            grid-row: unset;
+        .show-on-scroll{
+            opacity: 1;
+        }
         .link-text{
             width: 100%;
         }
