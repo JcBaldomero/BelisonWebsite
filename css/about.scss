@@ -834,10 +834,9 @@ header {
     }
     .row1 {
       .show-on-scroll {
-        transform: translateX(40%);
+        transform: translateX(0%);
       }
       .is-visible {
-        transform: translateX(0%);
         transition-delay: 0s;
       }
     }
@@ -852,14 +851,11 @@ header {
         }
       }
     }
-    .row3 {
+    .row2,.row3{
       .show-on-scroll {
-
-        transform: translateX(40%);
-  
-      }
-      .is-visible {
         transform: translateX(0%);
+        opacity: 1;
+  
       }
     }
   }
@@ -937,14 +933,20 @@ header {
       width:90%;
       padding-top: 2rem;
       @include flexBox(flex-start,center,column);
+      transform: scale(0,0);
+      transition: .5s ease;
 
     .official-details{
       width: 100%;
       height: unset;
       padding: 2rem 1rem;
       @include flexBox(center,center,column);
+      text-align: center;
     }
 
+    }
+    .is-visible{
+      transform: scale(1,1);
     }
   }
   }

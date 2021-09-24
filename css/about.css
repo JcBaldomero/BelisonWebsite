@@ -477,7 +477,7 @@ footer .bottom-footer span:hover {
   }
   footer .top-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -509,11 +509,9 @@ footer .bottom-footer span:hover {
   footer .top-footer .reference-container {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
-
   }
   footer .top-footer .reference-container .references-links {
     width: 100%;
@@ -523,19 +521,12 @@ footer .bottom-footer span:hover {
     flex-direction: column;
     margin-top: 1rem;
   }
-  footer .top-footer .reference-container .references-links .links1{
+  footer .top-footer .reference-container .references-links .links1, footer .top-footer .reference-container .references-links .links2 {
     width: 100%;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-  }
-  footer .top-footer .reference-container .references-links .links2 {
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
   }
 }
 
@@ -1620,10 +1611,9 @@ header .header-content .is-visible {
     transition: 1s ease;
   }
   .belison-faq-container .row1 .show-on-scroll {
-    transform: translateX(40%);
+    transform: translateX(0%);
   }
   .belison-faq-container .row1 .is-visible {
-    transform: translateX(0%);
     transition-delay: 0s;
   }
   .belison-faq-container .row2 .show-on-scroll .faq-img,
@@ -1634,11 +1624,9 @@ header .header-content .is-visible {
   .belison-faq-container .row3 .show-on-scroll .faq-img .img-wrapper {
     border: unset;
   }
-  .belison-faq-container .row3 .show-on-scroll {
-    transform: translateX(40%);
-  }
-  .belison-faq-container .row3 .is-visible {
+  .belison-faq-container .row2 .show-on-scroll, .belison-faq-container .row3 .show-on-scroll {
     transform: translateX(0%);
+    opacity: 1;
   }
   .belison-geo-container {
     padding: 5rem 0rem;
@@ -1709,6 +1697,8 @@ header .header-content .is-visible {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    transform: scale(0, 0);
+    transition: .5s ease;
   }
   .officials-container .officials-content .official .show-on-scroll .official-details {
     width: 100%;
@@ -1718,6 +1708,10 @@ header .header-content .is-visible {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+  }
+  .officials-container .officials-content .official .is-visible {
+    transform: scale(1, 1);
   }
   .timeline-container {
     padding: 4rem 0rem;
