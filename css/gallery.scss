@@ -746,10 +746,13 @@ main{
             }
         }
     }
-    .gri1,
+    .grid1,
     .grid2,
     .grid3,
     .grid4{
+        .show-on-scroll{
+            transform: translate(0%,0%);
+        }
         .is-visible{
             transition-delay: unset;
         }
@@ -1187,16 +1190,27 @@ main{
     .card-wrapper{
         width: 40%;
         .card{
-
-
         .front-card, .back-card{
-        .a-tour{
-            text-decoration: underline;
-
-        }
+            width: auto;
+            height: auto;
+            position: relative;
+            padding: 0rem;
         } 
+        .front-card{
+            padding: 1rem 0rem 0rem 0rem;
+        }
+        .back-card{
+            transform: rotateX(0deg);
+            padding: 1rem;
+        
+        }
         }
     }
+
+
+
+    
+   
     }
 }
 
@@ -1220,9 +1234,7 @@ main{
 
     .content{
         width: 50%;
-        padding: 2rem 1rem 2rem 0rem;
         left: 50%;
-
     }
 
     }
@@ -1237,9 +1249,7 @@ main{
         margin-left: 0rem;
     .content{
         width: 50%;
-        padding: 2rem 1rem 2rem 1rem;
         left: 0%;
-        
     }
 
     }

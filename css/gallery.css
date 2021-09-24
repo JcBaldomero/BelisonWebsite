@@ -522,7 +522,7 @@ footer .bottom-footer span:hover {
   }
   footer .top-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -554,11 +554,9 @@ footer .bottom-footer span:hover {
   footer .top-footer .reference-container {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
-
   }
   footer .top-footer .reference-container .references-links {
     width: 100%;
@@ -568,20 +566,7 @@ footer .bottom-footer span:hover {
     flex-direction: column;
     margin-top: 1rem;
   }
-  footer .top-footer .reference-container .references-links .links1{
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-  }
-  footer .top-footer .reference-container .references-links .links1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  footer .top-footer .reference-container .references-links .links1,
   footer .top-footer .reference-container .references-links .links2 {
     width: 100%;
     display: flex;
@@ -1526,7 +1511,13 @@ main {
   .tourist-spot-container .grid-wrapper .grid .show-on-scroll img {
     width: 90%;
   }
-  .tourist-spot-container .grid-wrapper .gri1 .is-visible,
+  .tourist-spot-container .grid-wrapper .grid1 .show-on-scroll,
+  .tourist-spot-container .grid-wrapper .grid2 .show-on-scroll,
+  .tourist-spot-container .grid-wrapper .grid3 .show-on-scroll,
+  .tourist-spot-container .grid-wrapper .grid4 .show-on-scroll {
+    transform: translate(0%, 0%);
+  }
+  .tourist-spot-container .grid-wrapper .grid1 .is-visible,
   .tourist-spot-container .grid-wrapper .grid2 .is-visible,
   .tourist-spot-container .grid-wrapper .grid3 .is-visible,
   .tourist-spot-container .grid-wrapper .grid4 .is-visible {
@@ -1853,8 +1844,18 @@ main {
   .tourist-spot-container .grid-wrapper .card-wrapper {
     width: 40%;
   }
-  .tourist-spot-container .grid-wrapper .card-wrapper .card .front-card .a-tour, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card .a-tour {
-    text-decoration: underline;
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .front-card, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card {
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 0rem;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .front-card {
+    padding: 1rem 0rem 0rem 0rem;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card {
+    transform: rotateX(0deg);
+    padding: 1rem;
   }
   .cultural-container {
     padding: 5rem 0rem;
@@ -1871,7 +1872,6 @@ main {
   }
   .cultural-container .content-wrapper .tangible .show-on-scroll .content {
     width: 50%;
-    padding: 2rem 1rem 2rem 0rem;
     left: 50%;
   }
   .cultural-container .content-wrapper .intangible {
@@ -1883,7 +1883,6 @@ main {
   }
   .cultural-container .content-wrapper .intangible .show-on-scroll .content {
     width: 50%;
-    padding: 2rem 1rem 2rem 1rem;
     left: 0%;
   }
   .ecotourism-container {
