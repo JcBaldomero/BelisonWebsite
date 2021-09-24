@@ -1761,7 +1761,7 @@ header .header-content .is-visible {
     flex-direction: row;
   }
   header .header-content .show-on-scroll img {
-    width: 53%;
+    width: 40%;
   }
   .welcome-msg-container .msg-content {
     padding: 4rem 2rem;
@@ -1818,7 +1818,7 @@ header .header-content .is-visible {
     background-color: rgba(0, 0, 0, 0.473);
   }
   .about-portal-container .about-block {
-    width: 90%;
+    width: 95%;
   }
   .about-portal-container .about1 .left-block p {
     line-height: 1.5;

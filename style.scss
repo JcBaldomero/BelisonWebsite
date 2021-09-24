@@ -781,6 +781,7 @@ header {
     .show-on-scroll {
       width: 100%;
       padding: 0rem;
+
     }
   }
   //
@@ -955,7 +956,7 @@ header {
       @include flexBox(center, center, row);
       .show-on-scroll {
         img {
-          width: 53%;
+          width: 40%;
         }
       }
     }
@@ -1015,7 +1016,7 @@ header {
 
   .about-portal-container {
     .about-block {
-      width: 90%;
+      width: 95%;
     }
     .about1{
     .left-block{
@@ -1023,6 +1024,7 @@ header {
         line-height: 1.5;
       }
     }
+
     }
     .about3 {
       .right-block {
