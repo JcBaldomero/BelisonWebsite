@@ -147,9 +147,12 @@ footer {
           width: 100%;
           @include flexBox(center, center, column);
           margin-top: 1rem;
-        .links2{
-          text-align: center;
-
+        .links1,.links2{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
         }
         }
       }
