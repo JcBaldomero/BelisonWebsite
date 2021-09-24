@@ -522,7 +522,7 @@ footer .bottom-footer span:hover {
   }
   footer .top-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -554,11 +554,9 @@ footer .bottom-footer span:hover {
   footer .top-footer .reference-container {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
-
   }
   footer .top-footer .reference-container .references-links {
     width: 100%;
@@ -568,18 +566,7 @@ footer .bottom-footer span:hover {
     flex-direction: column;
     margin-top: 1rem;
   }
-  footer .top-footer .reference-container .references-links .links1{
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-  }
   footer .top-footer .reference-container .references-links .links2 {
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
     text-align: center;
   }
 }
@@ -1415,6 +1402,7 @@ header .header-content .is-visible {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    transform: translate(0%, 0%);
   }
   .true-belison-container .true-text .show-on-scroll .true-text-buttons {
     display: flex;
@@ -1432,6 +1420,9 @@ header .header-content .is-visible {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .true-belison-container .true-accordion .show-on-scroll {
+    transform: translate(0%, 0%);
   }
   .about-portal-container {
     padding: 3rem 0rem;
@@ -1453,6 +1444,10 @@ header .header-content .is-visible {
   .about-portal-container .about-block .show-on-scroll .right-block {
     width: 100%;
   }
+  .about-portal-container .about1 .show-on-scroll {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
   .about-portal-container .about1 .show-on-scroll .left-block {
     width: 100%;
     padding: 1rem 1rem 0rem 1rem;
@@ -1462,6 +1457,7 @@ header .header-content .is-visible {
     flex-direction: column;
     text-align: center;
     margin-bottom: 1rem;
+    transform: translate(0%, 0%);
   }
   .about-portal-container .about1 .show-on-scroll .right-block {
     background: url("./Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg") no-repeat center;
@@ -1486,15 +1482,18 @@ header .header-content .is-visible {
   .about-portal-container .about2 .is-visible {
     transform: scale(1, 1);
   }
-  .about-portal-container .about3 .left-block {
-    padding: 0rem 0rem;
+  .about-portal-container .about3 .show-on-scroll {
+    transform: translate(0%, 0%);
+  }
+  .about-portal-container .about3 .show-on-scroll .left-block {
+    padding: 1rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: justify;
   }
-  .about-portal-container .about3 .right-block iframe {
+  .about-portal-container .about3 .show-on-scroll .right-block iframe {
     width: 100%;
   }
   .gallery-portal-container {
@@ -1503,7 +1502,11 @@ header .header-content .is-visible {
   .gallery-portal-container .gallery-text {
     margin: 5rem 0rem;
   }
-  .gallery-portal-container .gallery-text p {
+  .gallery-portal-container .gallery-text .show-on-scroll {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  .gallery-portal-container .gallery-text .show-on-scroll p {
     line-height: 1.5;
   }
   .gallery-portal-container .gallery-slideshow {
@@ -1539,6 +1542,7 @@ header .header-content .is-visible {
     align-items: center;
     flex-direction: column;
     width: 90%;
+    transform: translate(0%, 0%);
   }
   .contact-container .contact-map {
     width: 100%;

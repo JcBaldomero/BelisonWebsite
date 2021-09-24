@@ -601,6 +601,7 @@ header {
         width: 80%;
         @include flexBox(center, center, column);
         text-align: center;
+        transform: translate(0%,0%);
 
         .true-text-buttons {
           @include flexBox(center, center, column);
@@ -614,6 +615,9 @@ header {
       width: 100%;
       margin-left: 0rem;
       @include flexBox(center, center, column); 
+      .show-on-scroll{
+        transform: translate(0%,0%);
+      }
     }
  
   }
@@ -640,12 +644,17 @@ header {
 
     .about1 {
       .show-on-scroll {
+        opacity: 1;
+        transform: translate(0%,0%);
+
         .left-block {
           width: 100%;
           padding: 1rem 1rem 0rem 1rem;
           @include flexBox(center, center, column);
           text-align: center;
           margin-bottom: 1rem;
+          transform: translate(0%,0%);
+
         }
         .right-block {
           background: url('./Image/BelisonMunicipalHallEtc/Old-Belison-Municipal.jpg')
@@ -675,8 +684,10 @@ header {
   
 
     .about3 {
+      .show-on-scroll{
+        transform: translate(0%,0%);
       .left-block {
-        padding: 0rem 0rem;
+        padding: 1rem 1rem;
         @include flexBox(center, center, column);
         text-align: justify;
       }
@@ -686,6 +697,7 @@ header {
         }
       }
     }
+    }
   }
 
   //
@@ -693,9 +705,13 @@ header {
     padding: 2rem 1rem;
     .gallery-text {
       margin: 5rem 0rem;
+      .show-on-scroll{
+        opacity: 1;
+        transform: translate(0%,0%);
       p {
         line-height: 1.5;
       }
+    }
     }
     .gallery-slideshow {
       width: 100%;
@@ -725,6 +741,8 @@ header {
       .show-on-scroll {
         @include flexBox(center, center, column);
         width: 90%;
+        transform: translate(0%,0%);
+
       }
     }
 
