@@ -748,7 +748,7 @@ main {
   transition: 1.5s ease;
 }
 
-.contact-details-container .detail-wrapper .contact-maps .show-on-scroll h2 {
+.contact-details-container .detail-wrapper .contact-maps .show-on-scroll h1 {
   color: #dfc15e;
   font-size: clamp(1.5rem, 2.5rem, 6vw);
   padding: 1rem 0rem;

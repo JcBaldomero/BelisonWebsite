@@ -93,7 +93,7 @@ main{
       padding-right: 5rem;
       @include animation(0,translateX(-50%));
       transition:1.5s ease;
-    h2 {
+    h1{
       color: $textHover;
       font-size: clamp(1.5rem, 2.5rem, 6vw);
       padding: 1rem 0rem;
