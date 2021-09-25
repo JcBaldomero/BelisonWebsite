@@ -26,7 +26,7 @@ main{
   @include flexBox(center, center, column);
   background-color: $whiteHeaders;
   padding-bottom: 5rem;
- 
+
   .intro-text {
     width: 35%;
     padding: 3rem 0rem;
@@ -257,8 +257,8 @@ main{
     }
     }
     input[type='submit'] {
-        width: 20%;
         @extend %button;
+        width: auto;
         border: none;
         border-radius: .2rem;
         font-size: 1rem;
