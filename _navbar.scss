@@ -1,0 +1,319 @@
+@import "./mixins";
+
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    @include flexBox(center, center, row);
+     position: sticky;
+     top: 0%;
+     z-index: 99;
+}
+
+// Logo
+.logo{
+    width: 40%;
+    @include flexBox(center,center,row);
+    h1{
+        margin: 1.5rem 0rem;
+        color: $linktext;
+        font-size:clamp(1.3rem, 2rem, 4vw);
+        transition: .3s ease;
+        animation: logoAni 1s ease 1;
+        &:hover{
+            color: $textHover;
+        }
+    }
+    i{
+        display: none;
+        transition: .5s ease;
+        font-size: 1.5rem;
+        &:hover{
+            color: $textHover
+        }
+    }
+    @keyframes logoAni{
+        0%{
+            opacity: 0;
+            transform: translateY(-70%);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+
+// Nav Links
+.navlink-container{
+    @include flexBox(center, center, row);
+    width: 60%;
+    ul{
+        width: 100%;
+        @include flexBox(center, center,row);
+        li,a{
+            margin: 0rem 1rem;
+            font-size: clamp(1rem, 1.2rem, 4vw);
+            color: $linktext;
+            font-weight: 200;
+            cursor: pointer;
+            transition: .3s ease;
+            animation: linksAni 1s ease 1;
+            &:hover{
+                color: $textHover;
+            }
+            .activelink{
+                color: $textHover;
+            }
+    }
+    .gallery-mobile{
+        display: none;
+    }
+  }
+  @keyframes linksAni{
+    0%{
+        opacity: 0;
+        transform: translateY(-70%);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+}
+
+
+
+
+
+// dropdowns
+.dropdown{
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+    li{
+        color:  red;
+    }
+    i{
+        transition: .3s ease-out;
+    }
+
+    &:hover i{
+        transform: rotate(180deg);
+    }
+    .dropdwn-content{
+        width: 120%;
+        @include flexBox(center,center,column);
+        opacity: 0;
+        visibility: hidden;
+        padding: 1rem 0rem;
+        text-align: center;
+        background-color: white;
+        z-index: 99;
+        position: absolute;
+        transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        .activelink{
+            color: $textHover;
+        }
+    }  
+    &:hover  .dropdwn-content{
+    opacity: 1;
+    visibility: visible;
+    padding-top: 2rem;
+
+    a,i{
+        font-size: clamp(1rem, 1.1rem, 10rem);
+        padding: 1rem 0rem;
+        width: 100%;
+        transition: .3s ease;
+        &:hover{
+        color: $textHover;
+        border-left: 3px solid $textHover;
+        border-right: 3px solid $textHover;
+        }
+    }
+} 
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * /* 
+ *   ##Device = Most of the Smartphones Mobiles (Portrait)
+ *   ##Screen = 320px to 479px
+ *
+ * @format
+ */
+
+ @media (min-width: 240px) and (max-width: 480px) {
+     
+    nav{
+        padding: 2rem 0rem;
+    .logo{
+        width: 100%;
+        justify-content: space-around;
+        i{
+            display: inline;
+        }
+    }
+     .navlink-container{
+        opacity: 0;
+        position: absolute;
+        top: -50%;
+
+    }
+
+    .navlink-container.toggleNav{ 
+        width: 100%;
+        @include flexBox(center,center ,column );
+        opacity: 1;
+        top: 100%;
+        background-color: white;
+        z-index: 99;
+        ul{
+            @include flexBox(center, center ,column );
+        li{
+            padding: 1rem 0rem;
+        }
+        .gallery-mobile{
+            display: inline;
+        }
+        }
+    }
+
+    .dropdown{
+        display: none;
+}
+    }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = 481px to 767px
+*/
+
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+    nav{
+        padding: 2rem 0rem;
+    .logo{
+        width: 100%;
+        justify-content: space-around;
+        i{
+            display: inline;
+        }
+    }
+     .navlink-container{
+        opacity: 0;
+        position: absolute;
+        top: -50%;
+
+    }
+
+    .navlink-container.toggleNav{ 
+        width: 100%;
+        @include flexBox(center,center ,column );
+        opacity: 1;
+        top: 100%;
+        background-color: white;
+        z-index: 99;
+        ul{
+            @include flexBox(center, center ,column );
+        li{
+            padding: 1rem 0rem;
+        }
+        }
+    }
+
+    .dropdown{
+    width: 100%;
+    text-align: center;
+    i{
+        display: none;
+    }
+    .dropdwn-content{
+        i{
+            display: none;
+        }
+    }
+}
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen =  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    nav{
+        padding: 2rem 0rem;
+    .logo{
+        width: 100%;
+        justify-content: space-around;
+        i{
+            display: inline;
+        }
+    }
+     .navlink-container{
+        opacity: 0;
+        position: absolute;
+        top: -50%;
+
+    }
+
+    .navlink-container.toggleNav{ 
+        width: 100%;
+        @include flexBox(center,center ,column );
+        opacity: 1;
+        top: 100%;
+        background-color: white;
+        z-index: 99;
+        ul{
+            @include flexBox(center, center ,column );
+        li{
+            padding: 1rem 0rem;
+        }
+        .gallery-mobile{
+            display: inline;
+        }
+        }
+    }
+
+    .dropdown{
+        display: none;
+}
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 960px) and (max-width: 1300px) and (orientation: landscape) {
+}
+
+/* 
+##Device = Laptop(portrait)
+##Screen = B/w 1200px to 1450px
+*/
+@media (min-width: 1200px) and (max-width: 1450px) {
+}
+
+
+
+
+
+
+
+
+

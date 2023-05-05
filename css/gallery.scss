@@ -1,0 +1,1366 @@
+/** @format */
+
+
+// imports
+@import '../Mixins';
+@import '../navbar'; 
+@import '../footer';
+@import '../header';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;  
+
+}
+
+
+
+main{
+    position: relative;
+    z-index: 3;
+}
+// Tourist spots style
+.tourist-spot-container{
+    width: 100%;
+    padding: 10rem 0rem;
+    background-color: $whiteHeaders;
+    overflow-x: hidden;
+    @include flexBox(center,center,column);
+   
+
+.grid-wrapper{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,550px);
+    grid-template-rows: repeat(2, 400px);
+    position: relative;
+    justify-content: center;
+    .grid{
+        .show-on-scroll{
+            width: 100%;
+            height: 100%;
+            transition: 1s ease;
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 3px;
+        transition: .5s ease;
+    } 
+    }   
+    }
+    .grid1{
+    .show-on-scroll{
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: 1s ease;
+        @include flexBox(flex-end,flex-end,row);
+        img{
+            &:hover{
+                width: 70%;
+                height: 80%;
+            }
+        }
+    }
+    .is-visible{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    }
+
+
+    .grid2{
+        .show-on-scroll{
+            opacity: 0;
+            transform: translateX(50%);
+            transition: 1s ease;
+            @include flexBox(flex-start,flex-end,row);
+            img{
+         width: 70%;   
+         height: 80%;
+         &:hover{
+            width: 100%;   
+            height: 100%;
+         }
+        }   
+    }
+    .is-visible{
+        transform: translateX(0%);
+        opacity: 1;
+        transition-delay: .5s;
+    }
+    }
+    .grid3{
+        
+        .show-on-scroll{
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: 1s ease;
+            @include flexBox(flex-end,flex-start,row);
+            img{
+         width: 70%;   
+         height: 80%;
+         &:hover{
+            width: 100%;   
+            height: 100%;
+         }
+        }   
+    }
+    .is-visible{
+        transform: translateX(0%);
+        opacity: 1;
+        transition-delay: 1s;
+    }
+    }
+    .grid4{
+        .show-on-scroll{
+            opacity: 0;
+            transform: translateX(50%);
+            transition: 1s ease;
+            @include flexBox(flex-start,flex-start,row);
+            img{
+                &:hover{
+                    width: 70%;
+                    height: 80%;
+                }
+            }
+        }
+        .is-visible{
+            transform: translateX(0%);
+            opacity: 1;
+            transition-delay: 1.5s;
+        }
+        }
+
+
+
+
+    .card-wrapper{
+        width: 25%;
+        height: 300px;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all 0.6s ease;
+        z-index: 99;
+        perspective: 800px;
+
+        .card, .show-on-scroll{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            opacity: 0;
+            transform: scale(0,0);
+            transition: all .5s ease;
+            transform-style: preserve-3d;
+
+
+        .front-card, .back-card{
+            width: 100%;
+            height: 100%;
+            @include flexBox(center, center, column);
+            position: absolute;
+            background-color: $GreyBg;
+            text-align: center;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            // hides the backCard class away
+        h2{
+            color: $textHover;
+            font-size: clamp(2rem, 3rem, 5vw);
+   
+        }
+
+        } 
+        .back-card{
+            transform: rotateX(180deg);
+            padding: 5rem 1rem;
+            p{
+                color: $ptext;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+            }
+            a{
+                @extend %button;
+            }
+        }
+        }
+        &:hover .card{
+            transform:rotateX(180deg);
+        }
+        .is-visible{
+            opacity: 1;
+            transform: scale(1,1);
+        }
+        }
+
+    }
+}
+  
+
+// Cultural Heritage Style
+.cultural-container{
+    width: 100%;
+    @include flexBox(center,center,column);
+    background-color: $GreyBg;
+    padding: 5rem 0rem;
+    overflow-x: hidden;
+    .title{
+        h2{
+            color: $textHover;
+            font-size: clamp(2rem, 3rem, 5vw);
+        }
+    }
+
+    .content-wrapper{
+        margin: 5rem 0rem;
+        width: 100%;
+        @include flexBox(center,center,column);
+        h2{
+            color: $textHover;
+            font-size: 2rem;
+        }
+        span{
+            width: 120%;
+            height: 3px;
+            margin-left: -4rem;
+            display: block;
+            background-color:$textHover;
+            margin: 1rem 0rem;
+        }
+        p{
+            color: $ptext;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+        a{
+            @extend %button;
+        }
+    .tangible{
+        width: 80%;
+        height: 550px;
+        margin-bottom: 5rem;
+        position: relative;
+        @include flexBox(flex-start,center,row);
+    .show-on-scroll{
+        width: 65%;
+        height: 100%;
+        margin-left: 5rem;
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: 1s ease;
+    .slide{
+      filter: brightness(100%);
+    }
+    .slide1{
+        background: url('../Image/Tangible/Mt.Guinotan&Cave/Guinobatan3.jpg') no-repeat center;
+        background-size: cover;
+        animation:fadein 15s infinite ease;
+      }
+      .slide2{
+        background: url('../Image/Tangible/AcaciaTrees/Centennial-Acacia-Trees2.jpg') no-repeat center;
+        background-size: cover;
+        animation:fadein2 15s infinite ease;
+      }
+      .slide3{
+        background: url('../Image/Tangible/Mt.Guinotan&Cave/Guinobatan5.jpg') no-repeat center;
+        background-size: cover;
+        animation:fadein3 15s infinite ease;
+      }
+
+    .content{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translateY(-50%);
+        z-index: 99;
+    .show-on-scroll{
+        width: 100%;
+        margin: 0;
+        background-color: #212121;
+        padding: 2rem 1rem 2rem 2rem;
+        opacity: 0;
+        transform: translateX(60%);
+        transition: 1s ease;
+    }
+    .is-visible{
+        opacity: 1;
+        transform: translateX(0%);
+        transition-delay: 1s;
+    }
+    }
+    }
+    .is-visible{
+        opacity: 1;
+        transform: unset;
+    }
+
+    }
+    
+    .intangible{
+        width: 80%;
+        height: 550px;
+        position: relative;
+        @include flexBox(flex-start,center,row-reverse);
+    .show-on-scroll{
+        width: 65%;
+        height: 100%;
+        margin-left: 5rem;
+        opacity: 0;
+        transform: translateX(50%);
+        transition: 1s ease;
+    .slide{
+      filter: brightness(100%);
+    }
+    .slide1{
+        background: url('../Image/Intangeble/Guinobatan/53626876_2166756546743635_2050237496700174336_n.jpg') no-repeat center;
+        background-size: cover;
+        animation:fadein 15s infinite ease;
+      }
+      .slide2{
+        background: url('../Image/Intangeble/Biray/Binirayan2.jpg') no-repeat center;
+        background-size: cover;
+        animation:fadein2 15s infinite ease;
+      }
+      .slide3{
+        background: url('../Image/Intangeble/Guinobatan/53660788_2166757453410211_710074290074025984_n.jpg') no-repeat center;
+        background-size: cover;
+        animation:fadein3 15s infinite ease;
+      }
+
+    .content{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        text-align: end;
+        transform: translateY(-50%);
+        z-index: 99;
+        .show-on-scroll{
+            width: 100%;
+            margin: 0;
+            @include flexBox(center,flex-end, column);
+            background-color: #212121;
+            padding: 2rem 2rem 2rem .5rem;
+            opacity: 0;
+            transform: translateX(-60%);
+            transition: 1s ease;
+        }
+        .is-visible{
+            opacity: 1;
+            transform: translateX(0%);
+            transition-delay: 1s;
+        } 
+    }
+
+    }
+    .is-visible{
+        opacity: 1;
+        transform: unset;
+    }
+
+    }
+    
+
+    }
+}
+
+
+
+// Ecotourism Style
+.ecotourism-container{
+    width: 100%;
+    @include flexBox(center,center,row);
+    padding: 5rem 0rem 35rem 0rem;
+    background-color: $GreyBg;
+    overflow: hidden;
+
+    .wrapper{
+        width: 80%;
+        @include flexBox(center,flex-start,column);
+        padding: 2rem 0rem;
+    .title{
+        width: 40%;
+        text-align: justify;
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: 1s ease;
+        .top-title{
+            @include flexBox(flex-start,center,row);
+        }
+
+        h2{
+            color: $textHover;
+            font-size: clamp(2rem, 3.5rem, 5vw);
+            margin-left: .5rem;
+        }
+        p{
+            color: $ptext;
+            line-height: 1.8;
+            margin: 1rem 0rem;
+        }
+    }
+    .is-visible{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    .main-img{
+        width: 60%;
+        height: 340px;
+        margin: 2rem 0rem 5rem 0rem;
+        position: relative;
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: 1s ease;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-color: $GreyBg;
+        }
+        .sub-img-top{
+            width: 430px;
+            height: 555px;
+            position: absolute;
+            top: -85%;
+            left: 80%;
+            z-index: 4;
+            opacity: 0;
+            transform: translateY(-50%);
+            transition: 1s ease;
+        }
+        .is-visible{
+            opacity: 1;
+            transform: translateY(0%);
+            transition-delay: 1.5s;
+        }
+
+        .sub-img-bottom{
+            width: 390px;
+            height: 530px;
+            position: absolute;
+            border: 10px solid $whiteHeaders;
+            top: 60%;
+            left: 60%;
+            z-index: 3;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: 1s ease;
+        .sub-img-right{
+            width: 316px;
+            height: 280px;
+            border: 8px solid $textHover;
+            position: absolute;
+            top: -10%;
+            left: 125%;
+            opacity: 0;
+            transform: translateX(50%);
+            transition: 1s ease;
+        }
+        .is-visible{
+            opacity: 1;
+            transform: translateY(0%);
+            transition-delay: 1s;
+        }
+        .sub-img-right2{
+            width: 280px;
+            height: 200px;
+            position: absolute;
+            top: 85%;
+            left: 85%;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: 1s ease;
+        }
+        .is-visible{
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        }
+        .is-visible{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    .is-visible{
+        opacity: 1;
+        transform: translateX(0%);
+        transition-delay: .5s;
+    }
+
+    .button{
+        a{
+            @extend %button;
+        }
+    }
+    
+    }
+}
+
+
+// Churches Style
+.churches-container{
+    width: 100%;
+    background-color: $whiteHeaders;
+    @include flexBox(center,center,row);
+
+    .text-wrapper{
+        width: 85%;
+        @include flexBox(center,center,column);
+    .title{
+        width: 100%;
+        display: flex;
+        h2{
+            align-self: flex-end;
+            color: $textHover;
+            font-size: clamp(2.5rem, 4rem, 5vw);
+        }
+    }
+    .descript{
+        text-align: justify;
+        p{
+            line-height: 1.5;
+        }
+    .below{
+        text-align: center;
+        margin: 2rem 0rem 4rem 0rem;
+    }
+    }
+
+    .church-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        gap: 2rem 1rem;
+        margin: 5rem 0rem;
+    .grid{ 
+        .show-on-scroll{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            @include flexBox(flex-end,flex-start,column);
+            padding:0rem 1rem 1rem 1rem;
+
+        h2{
+            color: $whiteHeaders;
+            font-size: clamp(1rem, 2rem, 5vw);
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 10px black;
+        }
+        p{
+            font-size: .9rem;
+            text-shadow: 1px 1px 3px black;
+            color: $whiteHeaders;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.377);
+            }
+        }
+        .link{
+            margin: .4rem 0rem;
+            color: $whiteHeaders;
+            text-decoration: underline;
+            &:hover{
+                color: $textHover;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+
+    }
+    .grid1{
+        .show-on-scroll{
+            background: $GreyBg url("../Image/Chuches/OurLadyOfParish/Belison\ Cathedral.jpg") no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .8s ease;
+        }
+    .is-visible{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    }
+    .grid2{
+        .show-on-scroll{
+            background: $GreyBg url("../Image/Chuches/IglesiaFilipinaIndependiente/IFIchurch.jpg") no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .8s ease;
+        }
+    .is-visible{
+        opacity: 1;
+        transform: translateY(0%);
+        transition-delay: .5s;
+    }
+    }
+    .grid3{
+        .show-on-scroll{
+        background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+        background-size: cover;
+        opacity: 0;
+        transform: translateY(50%);
+        transition: .8s ease;
+        }
+        .is-visible{
+            opacity: 1;
+            transform: translateY(0%);
+            transition-delay: 1s;
+        }
+    }
+    .grid4{
+        .show-on-scroll{
+            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .8s ease;
+            }
+            .is-visible{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+    }
+    .grid5{
+        .show-on-scroll{
+            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .8s ease;
+            }
+            .is-visible{
+                opacity: 1;
+                transform: translateY(0%);
+                transition-delay: .5s;
+            }
+    }
+    .grid6{
+        .show-on-scroll{
+            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .8s ease;
+            }
+            .is-visible{
+                opacity: 1;
+                transform: translateY(0%);
+                transition-delay: 1s;
+            }
+    }
+    .grid7{
+        .show-on-scroll{
+            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .8s ease;
+            }
+            .is-visible{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+    }
+    .grid8{
+        .show-on-scroll{
+            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .8s ease;
+            }
+            .is-visible{
+                opacity: 1;
+                transform: translateY(0%);
+                transition-delay: .5s;
+            }
+    }
+    .grid9{
+        .show-on-scroll{
+            background: $GreyBg url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .8s ease;
+            }
+            .is-visible{
+                opacity: 1;
+                transform: translateY(0%);
+                transition-delay: 1s;
+            }
+    }
+    
+    }
+
+    }
+}
+
+
+// 
+// 
+// 
+// Media Queries
+// 
+// 
+// 
+
+/**
+ * /* 
+ *   ##Device = Most of the Smartphones Mobiles (Portrait)
+ *   ##Screen = 320px to 479px
+ *
+ * @format
+ */
+
+ @media (min-width: 240px) and (max-width: 480px) {
+// Tourist spots style
+.tourist-spot-container{
+    padding: 5rem 0rem;
+    @include flexBox(center,center,column);
+.grid-wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    .grid{
+        .show-on-scroll{
+            @include flexBox(center,center,row);
+            img{
+                width: 90%;   
+            }
+        }
+    }
+    .gri1,
+    .grid2,
+    .grid3,
+    .grid4{
+        .is-visible{
+            transition-delay: unset;
+        }
+    }
+    .grid2{
+        .show-on-scroll{
+            img{
+         width: 90%;   
+         height: 100%;
+        }   
+    }
+    }
+    .grid3{
+    .show-on-scroll{
+            img{
+         width: 90%;   
+         height: 100%;
+        }   
+    }
+    }
+
+
+
+    .card-wrapper{
+        width: auto;
+        height: auto;
+        position: relative;
+
+        .card{
+            width: auto;
+            height: auto;
+            position: relative;
+
+        .front-card, .back-card{
+            width: auto;
+            height: auto;
+            position: relative;
+
+        } 
+        .front-card{
+            padding: 1rem 0rem 0rem 0rem;
+        }
+        .back-card{
+            transform: rotateX(0deg);
+            padding: 1rem 1rem 2rem 1rem;
+
+        }
+        }
+        }
+
+
+ 
+
+    }
+}
+// Cultural Heritage Style
+.cultural-container{
+    padding: 5rem 0rem;
+
+
+    .content-wrapper{
+        height: auto;
+        padding: 0rem 0rem 20rem 0rem;
+        span{
+            width: 90%;
+            margin-left: 0rem;
+        }
+    .tangible{
+        width: 90%;
+        height: 300px;
+        margin-bottom: 35rem;
+        @include flexBox(center,center,column);
+    .show-on-scroll{
+        width: 100%;
+        height: 100%;
+        margin-left: 0rem;
+  
+    .content{
+        width: 100%;
+        padding: 2rem 0rem 2rem 0rem;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translateY(0%);
+        z-index: 1;
+        margin-bottom: 10rem;
+    }
+
+    }
+
+
+    }
+    
+    .intangible{
+        width: 93%;
+        height: 300px;
+        @include flexBox(center,center,column);
+        z-index: 90;
+        position: relative;
+    .show-on-scroll{
+        width: 100%;
+        height: 100%;
+        margin-left: 0rem;
+
+
+    .content{
+        width: 100%;
+        padding: 1rem 0rem 0rem 0rem;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        text-align: center;
+        transform: translateY(0%);
+        @include flexBox(center,center,column);
+    }
+
+
+    }
+
+
+    }
+    
+ 
+    
+
+    }
+}
+// Ecotourism Style
+.ecotourism-container{
+    padding: 5rem 0rem 90rem 0rem;
+    @include flexBox(flex-start,center,row);
+    .wrapper{
+        width: 100%;
+        @include flexBox(center,center,column);
+        padding: 2rem 0rem;
+    .title{
+        width: 90%;
+    }
+    .main-img{
+        width: 85%;
+        margin: 2rem 0rem 2.5rem 0rem;
+        opacity: 1;
+        transform: translate(0%,0%);
+
+        .sub-img-top{
+            width: 100%;
+            height: 350px;
+            position: unset;
+            margin: 5.5rem 0rem;
+            opacity: 1;
+            transform: translate(0%,0%);
+        }
+
+        .sub-img-bottom{
+            width: 100%;
+            border: none;
+            height: 350px;
+            position: unset;
+            opacity: 1;
+            transform: translate(0%,0%);
+        .sub-img-right{
+            width: 100%;
+            border: none;
+            position: unset;
+            margin: 4rem 0rem;
+            opacity: 1;
+            transform: translate(0%,0%);
+        }
+        .sub-img-right2{
+            width: 100%;
+            position: unset;
+            opacity: 1;
+            transform: translate(0%,0%);
+        }
+        }
+    }
+
+
+
+    
+    }
+}
+// Churches Style
+.churches-container{
+    .text-wrapper{
+    .title{
+        @include flexBox(center,center,column);
+        h2{
+            text-align: center;
+            align-self: unset;
+        }
+    }
+    .descript{
+        text-align: center;
+        p{
+            line-height: 1.6;
+        }
+    }
+
+    .church-grid{
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(9, 300px);    
+    }
+
+    }
+}
+
+
+// 
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = 481px to 767px
+*/
+
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+// Tourist spots style
+.tourist-spot-container{
+    padding: 5rem 0rem;
+.grid-wrapper{
+    grid-template-columns: repeat(2,1fr);
+    .grid{
+        .show-on-scroll{  
+    img{
+        width: 90%;
+    } 
+    }   
+    }
+    
+    .card-wrapper{
+        width: 40%;
+        .card{
+
+
+        .front-card, .back-card{
+        .a-tour{
+            text-decoration: underline;
+        }
+        } 
+        }
+    }
+    }
+}
+// Cultural Heritage Style
+.cultural-container{
+    padding: 5rem 0rem;
+
+
+    .content-wrapper{
+        span{
+            width: 100%;
+
+        }
+      
+    .tangible{
+        width: 90%;
+        
+        height: 450px;
+    .show-on-scroll{
+        margin-left: 0rem;
+
+    .content{
+        width: 50%;
+        padding: 2rem 1rem 2rem 1rem;
+        left: 55%;
+    }
+
+    }
+
+
+    }
+    
+    .intangible{
+        width: 90%;
+        height: 450px;
+    .show-on-scroll{
+        margin-left: 0rem;
+    .content{
+        width: 50%;
+        padding: 2rem 1rem 2rem 1rem;
+        left: 0%;
+    }
+
+    }
+
+
+    }
+    
+
+    }
+}
+// Ecotourism Style
+.ecotourism-container{
+    padding: 5rem 0rem 90rem 0rem;
+    @include flexBox(flex-start,center,row);
+    .wrapper{
+        width: 100%;
+        @include flexBox(center,center,column);
+        padding: 2rem 0rem;
+    .title{
+        width: 90%;
+    }
+    .main-img{
+        width: 85%;
+        margin: 2rem 0rem 2.5rem 0rem;
+
+        .sub-img-top{
+            width: 100%;
+            height: 350px;
+            position: unset;
+            margin: 5.5rem 0rem;
+        }
+
+        .sub-img-bottom{
+            width: 100%;
+            border: none;
+            height: 350px;
+            position: unset;
+        .sub-img-right{
+            width: 100%;
+            border: none;
+            position: unset;
+            margin: 4rem 0rem;
+        }
+        .sub-img-right2{
+            width: 100%;
+            position: unset;
+        }
+        }
+    }
+
+
+
+    
+    }
+}
+// Churches Style
+.churches-container{
+    .text-wrapper{
+   
+
+    .church-grid{
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(5, 300px);    
+    }
+    .grid9{
+        grid-column: 1/3;
+    }
+    }
+}
+
+
+
+
+// 
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen =  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+// Tourist spots style
+.tourist-spot-container{
+    padding: 5rem 0rem;
+.grid-wrapper{
+    grid-template-columns: repeat(2,1fr);
+    .grid{
+        .show-on-scroll{  
+    img{
+        width: 90%;
+    } 
+    }   
+    }
+
+
+    .card-wrapper{
+        width: 40%;
+        .card{
+
+
+        .front-card, .back-card{
+        .a-tour{
+            text-decoration: underline;
+
+        }
+        } 
+        }
+    }
+    }
+}
+
+// Cultural Heritage Style
+.cultural-container{
+    padding: 5rem 0rem;
+
+
+    .content-wrapper{
+        span{
+            width: 100%;
+
+        }
+      
+    .tangible{
+        width: 90%;
+        
+        height: 450px;
+    .show-on-scroll{
+        margin-left: 0rem;
+
+    .content{
+        width: 50%;
+        padding: 2rem 1rem 2rem 0rem;
+        left: 50%;
+
+    }
+
+    }
+
+
+    }
+    
+    .intangible{
+        width: 90%;
+        height: 450px;
+    .show-on-scroll{
+        margin-left: 0rem;
+    .content{
+        width: 50%;
+        padding: 2rem 1rem 2rem 1rem;
+        left: 0%;
+        
+    }
+
+    }
+
+
+    }
+    
+
+    }
+}
+
+// Ecotourism Style
+.ecotourism-container{
+    padding: 5rem 0rem 20rem 0rem;
+
+    .wrapper{
+        width: 100%;
+        @include flexBox(center,flex-start,column);
+        padding: 2rem 0rem 2rem 3rem;
+
+    .main-img{
+        width: 65%;
+        height: 340px;
+        margin: 2rem 0rem 5rem 0rem;
+
+        .sub-img-top{
+            width: 320px;
+            height: 520px;
+            top: -65%;
+            left: 80%;
+        }
+
+        .sub-img-bottom{
+            width: 340px;
+            height: 480px;
+            top: 60%;
+            left: 49%;
+        .sub-img-right{
+            width: 270px;
+            height: 220px;
+            top: 70%;
+            left: 65%;
+        }
+        .sub-img-right2{
+          display: none;
+        }
+        }
+    }
+
+
+
+    
+    }
+}
+
+// Churches Style
+.churches-container{
+    .text-wrapper{
+   
+
+    .church-grid{
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(5, 300px);    
+    }
+    .grid9{
+        grid-column: 1/3;
+    }
+    }
+}
+
+
+// 
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 960px) and (max-width: 1300px) and (orientation: landscape) {
+// Tourist spots style
+.tourist-spot-container{
+    padding: 5rem 0rem;
+.grid-wrapper{
+    grid-template-columns: repeat(2,1fr);
+    .grid{
+        .show-on-scroll{  
+    img{
+        width: 90%;
+    } 
+    }   
+    }
+
+    .card-wrapper{
+        width: 40%;
+        .card{
+
+
+        .front-card, .back-card{
+        .a-tour{
+            text-decoration: underline;
+        }
+        } 
+        }
+    }
+    }
+}
+.cultural-container{
+    .content-wrapper{
+        .tangible{
+            .show-on-scroll{
+       
+                .content{
+                    width: 40%;
+                    .show-on-scroll{
+                        padding: 2rem 0rem 2rem .5rem;
+                    }
+                }
+            }
+        }
+        .intangible{
+            .show-on-scroll{
+
+                .content{
+                    width: 40%;
+
+                    .show-on-scroll{
+                        padding: 2rem 1rem 2rem 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+}
+
+
+/* 
+##Device = Laptop(portrait)
+##Screen = B/w 1200px to 1450px
+*/
+@media (min-width: 1200px) and (max-width: 1450px) {
+// Cultural Heritage Style
+.cultural-container{
+  
+    .content-wrapper{
+       
+
+    .tangible{
+    .show-on-scroll{
+    .content{
+        width: 35%;
+        left: 65%;
+    }
+    }
+
+
+    }
+    
+    .intangible{
+
+    .show-on-scroll{
+       
+
+
+    .content{
+        width: 35%;
+        left: 10%;
+    
+    }
+
+    }
+
+
+    }
+    
+
+    }
+}
+}

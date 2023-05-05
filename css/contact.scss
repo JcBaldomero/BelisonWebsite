@@ -1,0 +1,752 @@
+/** @format */
+
+// Imports
+@import '../Mixins';
+@import '../navbar';
+@import '../footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+main{
+    position: relative;
+    z-index: 3;
+}
+
+// contact intro
+.intro-container {
+  @include flexBox(center, center, column);
+  background-color: $whiteHeaders;
+  padding-bottom: 5rem;
+ 
+  .intro-text {
+    width: 35%;
+    padding: 3rem 0rem;
+    
+    
+   
+    .show-on-scroll{
+      @include animation(0,translateY(50%));
+      transition:1s ease;
+
+    h3 {
+        font-size: clamp(2rem, 3rem, 6vw);
+        padding: 0rem 0rem 1rem 0rem;
+        color: $textHover;
+      }
+  
+    p {
+      font-size: clamp(1rem, 1.2rem, 3vw);
+      margin-bottom: 2rem;
+      line-height: 1.5rem;
+    }
+    a {
+      font-size: 2.5rem;
+      color: black;
+      transition: 0.4s ease;
+      &:hover {
+        color: $textHover;
+      }
+    }
+  }
+
+  .is-visible{
+    @include animation(1,translateY(0%));
+  }
+  
+  }
+
+
+
+
+
+
+}
+
+
+//Contact details style
+.contact-details-container {
+  width: 100%;
+  @include flexBox(center, space-between, column);
+  background-color: $GreyBg;
+  overflow-x: hidden;
+
+
+  .detail-wrapper{
+    width: 100%;
+    @include flexBox(center, space-between, row);
+
+  .contact-maps {
+    width: 50%;
+    padding: 5rem 0rem;
+    
+    .show-on-scroll{
+      @include flexBox(center, flex-end, column);
+      padding-right: 5rem;
+      @include animation(0,translateX(-50%));
+      transition:1.5s ease;
+    h2 {
+      color: $textHover;
+      font-size: clamp(1.5rem, 2.5rem, 6vw);
+      padding: 1rem 0rem;
+      align-self: center;
+    }
+    iframe {
+      width: 75%;
+    }
+  }
+  .is-visible{
+    @include animation(1,translateX(0%));
+  }
+  }
+
+  .contact-details {
+    width: 50%;
+    color: $whiteHeaders;
+    padding: 5rem 0rem;
+   
+   .show-on-scroll{
+    @include flexBox(flex-start, center, column);
+    @include animation(0,translateX(50%));
+    transition: 1.5s ease;
+      p {
+      margin-bottom: 2rem;
+      padding-right: 15rem;
+      line-height: 1.5;
+    }
+
+    .contact-socials {
+      width: 100%;
+      @include flexBox(center, flex-start, column);
+      color: $ptext;
+
+      .social {
+        width: 100%;
+        @include flexBox(flex-start, center, row);
+        padding: 1rem 0rem;
+
+        .social-icon {
+          @include flexBox(center, center, row);
+          margin-right: 2rem;
+          i {
+            font-size: 1.5rem;
+            @extend %link;
+          }
+        }
+
+        .social-text {
+          @include flexBox(flex-end, flex-start, column);
+          h3 {
+            font-size: clamp(1.2rem, 1.7rem, 4vw);
+            margin-bottom: 0.5rem;
+            color: $textHover;
+          }
+        }
+      }
+      .p-down{
+          color: $whiteHeaders;
+      }
+      a{
+        color: $textHover;
+        font-size: 2.5rem;
+        transition: 0.4s ease;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+   }
+   
+   .is-visible{
+    @include animation(1,translateX(0%));
+    transition-delay: .5s;
+   }
+  }
+}
+
+
+
+
+  a {
+    color: $textHover;
+    font-size: 1.5rem;
+  }
+  
+  .divider{
+    width: 100%;
+    aspect-ratio: 900/350;
+    align-self: flex-end;
+    background: url('../Image/Svg/layered-waves-haikei.svg') no-repeat center;
+    background-size: cover;
+    transform: rotate(180deg);
+  }
+}
+
+// Contact form Style
+.contact-form-container {
+  width: 100%;
+  background-color: $whiteHeaders;
+  padding: 2rem 0rem 10rem 0rem;
+  @include flexBox(center, center, row);
+
+  .contact-form-lottie {
+    width: 55%;
+    @include flexBox(center, center, column);
+  
+    .show-on-scroll{
+      @include animation(0,translateX(-50%));
+      transition:1.5s ease;
+    .contact-lottie-text {
+      padding: 0rem 12rem 0rem 5rem;
+      h2 {
+        font-size: clamp(1.5rem, 2.5rem, 4vw);
+        color: $textHover;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: $linktext;
+      }
+    }
+  }
+  .is-visible{
+    @include animation(1,translateX(0%));
+  }
+  }
+
+  .contact-form{
+      width: 45%;
+
+
+    .show-on-scroll{
+      opacity: 0;
+      transition: 1s ease-in;
+     form{
+      width: 75%;
+      padding: 3rem 2rem;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      box-shadow:  33px 33px 100px #d9d9d9,
+                   -33px -33px 100px #ffffff;
+      h2{
+          color: $textHover;
+          font-size: 2rem;
+          margin-bottom: .5rem;
+      }
+    .form-name{
+        width: 100%;
+        input{
+            width: 43%;
+        }
+    }
+    input, textarea{
+        margin:.5rem;
+        padding: 0.5rem;
+        width: 90%;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+    &:focus{
+        outline-style: solid;
+        outline-width: 2px;
+        outline-color: $textHover;
+    }
+    }
+    input[type='submit'] {
+        width: 20%;
+        @extend %button;
+        border: none;
+        border-radius: .2rem;
+        font-size: 1rem;
+    }
+ 
+    
+
+    
+  }
+  }
+
+  .is-visible{
+    opacity: 1;
+    transition-delay: 1s;
+  }
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//
+//
+// Media Queries
+//
+//
+//
+//
+
+/**
+ * /* 
+ *   ##Device = Most of the Smartphones Mobiles (Portrait)
+ *   ##Screen = 320px to 479px
+ *
+ * @format
+ */
+
+@media (min-width: 240px) and (max-width: 480px) {
+
+  // contact intro
+  .intro-container {
+
+    padding: 0rem;
+    .intro-text {
+      width: 100%;
+      margin: 3rem 0rem 0rem 0rem;
+      padding: 0rem 1rem;
+      text-align: center;
+    }
+
+    .intro-lottie {
+      lottie-player {
+        width: 100%;
+      }
+    }
+  }
+
+  //Contact form style
+  .contact-details-container {
+    @include flexBox(center, center, column);
+    
+    .detail-wrapper{
+      width: 100%;
+      @include flexBox(center, flex-end, column);
+      padding: 0rem 1rem;
+
+
+    .contact-maps {
+      width: 100%;
+      margin: 0rem;
+      .show-on-scroll{
+        @include flexBox(center, center, column);
+        padding-right: 0rem;
+
+
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+    }
+    }
+  
+
+    .contact-details {
+      width: 100%;
+
+      .show-on-scroll{
+      p {
+        text-align: center;
+        padding-right: 0rem;
+      }
+
+      .contact-socials {
+        width: 100%;
+        @include flexBox(center, center, column);
+
+        .social {
+          width: 100%;
+          @include flexBox(center, center, column);
+          padding: 1rem 0rem;
+
+          .social-icon {
+            @include flexBox(center, center, row);
+            margin: 0rem 0rem 1rem 0rem;
+          }
+
+          .social-text {
+            @include flexBox(center, center, column);
+            padding: 0rem 1rem;
+          }
+        }
+      }
+    }
+  }
+  }
+  }
+
+
+
+    // Contact form Style
+    .contact-form-container {
+      @include flexBox(center, center,column);
+  
+      .contact-form-lottie {
+        width: 100%;
+        @include flexBox(center, center, column);
+        text-align: center;
+        margin-bottom: 3rem;
+        .show-on-scroll{
+        .contact-lottie-text {
+          padding: 0rem 1rem;
+        }
+      }
+      }
+  
+      
+    .contact-form{
+      width: 100%;
+    .show-on-scroll{
+     form{
+      width: 100%;
+      box-shadow: unset;
+    .form-name{
+        width: 100%;
+        input{
+            width: 43%;
+        }
+    }
+    input, textarea{
+        margin:.5rem;
+        padding: 0.5rem;
+        width: 90%;
+    }
+  
+  
+    input[type='submit'] {
+      width: 35%;
+  
+  }
+    }
+  }
+  }
+    }
+}
+
+
+
+
+
+
+
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = 481px to 767px
+*/
+
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+
+    .intro-container {
+    padding: 0rem;
+    .intro-text {
+      width: 100%;
+      margin: 3rem 0rem 0rem 0rem;
+      padding: 0rem 1rem;
+      text-align: center;
+    }
+  
+    }
+
+
+
+
+
+//Contact details style
+.contact-details-container {
+
+
+  .detail-wrapper{
+    @include flexBox(center, center, column);
+
+  .contact-maps {
+    width: 100%;
+    
+    .show-on-scroll{
+      @include flexBox(center, center, column);
+      padding-right: 0rem;
+  }
+  }
+
+  .contact-details {
+    width: 100%;
+    padding: 5rem 0rem;
+    @include flexBox(center, center, column);
+   .show-on-scroll{
+    @include flexBox(center, center, column);
+    width: 80%;
+    padding: 0rem 3rem;
+      p {
+      padding-right: 0rem;
+        text-align: center;
+    }
+
+    .contact-socials {
+      width: 100%;
+      @include flexBox(center, center, column);
+
+
+      .social {
+        @include flexBox(center,center,row);
+        .social-text {
+          @include flexBox(center, center, column);
+          text-align: center;
+        }
+      }
+
+ 
+    }
+   }
+   
+
+  }
+}
+
+
+}
+
+
+
+// Contact form Style
+.contact-form-container {
+  @include flexBox(center, center, column);
+
+  .contact-form-lottie {
+    width: 100%;
+    margin-bottom: 5rem;    
+    .show-on-scroll{
+
+    .contact-lottie-text {
+      padding: 0rem 2rem;
+      text-align: center;
+
+    }
+  }
+  .is-visible{
+    @include animation(1,translateX(0%));
+  }
+  }
+
+  .contact-form{
+      width: 100%;
+    padding-bottom: 5rem;
+
+    .show-on-scroll{
+      @include flexBox(center,center,row);
+
+  }
+
+
+}
+}
+
+
+
+
+// 
+}
+
+/* 
+
+
+
+##Device = Tablets, Ipads (portrait)
+##Screen =  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .intro-container {
+    padding: 0rem;
+    .intro-text {
+      width: 100%;
+      margin: 3rem 0rem 0rem 0rem;
+      padding: 0rem 5rem;
+      text-align: center;
+    }
+  }
+
+  
+ //Contact details style
+.contact-details-container {
+
+
+  .detail-wrapper{
+    @include flexBox(center, center, column);
+
+  .contact-maps {
+    width: 100%;
+    
+    .show-on-scroll{
+      @include flexBox(center, center, column);
+      padding-right: 0rem;
+  }
+  }
+
+  .contact-details {
+    width: 100%;
+    padding: 5rem 0rem;
+    @include flexBox(center, center, column);
+   .show-on-scroll{
+    @include flexBox(center, center, column);
+    width: 80%;
+    padding: 0rem 3rem;
+      p {
+      padding-right: 0rem;
+        text-align: center;
+    }
+
+    .contact-socials {
+      width: 100%;
+      @include flexBox(center, center, column);
+
+
+      .social {
+        @include flexBox(center,center,row);
+        .social-text {
+          @include flexBox(center, center, column);
+          text-align: center;
+        }
+      }
+
+ 
+    }
+   }
+   
+
+  }
+}
+
+
+}
+
+
+
+// Contact form Style
+.contact-form-container {
+
+  @include flexBox(center, center, column);
+
+  .contact-form-lottie {
+    width: 100%;
+    @include flexBox(center, center, column);
+    margin-bottom: 5rem;
+    .show-on-scroll{
+    .contact-lottie-text {
+      padding: 0rem 3rem;
+      text-align: center;
+
+    }
+  }
+  .is-visible{
+    @include animation(1,translateX(0%));
+  }
+  }
+
+  .contact-form{
+      width: 100%;
+      padding-bottom: 4rem;
+
+    .show-on-scroll{
+      @include flexBox(center,center,row);
+     form{
+      width: 75%;
+      padding: 3rem 2rem;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      box-shadow:  33px 33px 100px #d9d9d9,
+                   -33px -33px 100px #ffffff;
+      h2{
+          color: $textHover;
+          font-size: 2rem;
+          margin-bottom: .5rem;
+      }
+    .form-name{
+        width: 100%;
+        input{
+            width: 43%;
+        }
+    }
+    input, textarea{
+        margin:.5rem;
+        padding: 0.5rem;
+        width: 90%;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+    &:focus{
+        outline-style: solid;
+        outline-width: 2px;
+        outline-color: $textHover;
+    }
+    }
+    input[type='submit'] {
+        width: 20%;
+        border: none;
+        border-radius: .2rem;
+        font-size: 1rem;
+    }
+ 
+    
+
+    
+  }
+  }
+
+  .is-visible{
+    opacity: 1;
+    transition-delay: 1s;
+  }
+
+}
+}
+
+
+
+// 
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 960px) and (max-width: 1300px) and (orientation: landscape) {
+  .intro-container {
+    padding: 0rem;
+    .intro-text {
+      width: 100%;
+      margin: 3rem 0rem 0rem 0rem;
+      padding: 0rem 5rem;
+      text-align: center;
+    }
+  }
+  .contact-form-container{
+    .contact-form{
+        form{
+            
+    input[type='submit'] {
+      width: 45%;
+  
+  }
+        }
+    }
+  }
+}
+
+
+
+/* 
+##Device = Laptop(portrait)
+##Screen = B/w 1200px to 1450px
+*/
+@media (min-width: 1200px) and (max-width: 1450px) {
+}

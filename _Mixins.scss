@@ -1,0 +1,79 @@
+/** @format */
+
+// Mixins
+@mixin flexBox($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+@mixin grid($columns,$rows,$gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+}
+// Mixins(animations)
+@mixin animate($name,$duration,$method,$iteration) {
+  animation: $name, $duration, $method, $iteration;
+}
+
+
+// Specific animation style
+@mixin animation($opacity,$transform) {
+  opacity:$opacity;
+  transform:$transform;
+}
+
+
+
+
+
+// Variables
+$fontFam1:Helvetica, sans-serif;
+$whiteHeaders: rgb(255, 255, 255);
+$GreyBg: rgb(40, 40, 40) ;
+$linktext: rgb(51, 51, 51);
+$ptext: rgb(140, 151, 158);
+$textHover:  rgb(223, 193, 94);
+$shadowBox: 5px 5px 8px rgba(0, 0, 0, 0.15);
+
+
+// Extends
+%link{
+  padding: 1rem;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #282828;
+  box-shadow: inset 7px 7px 15px #222222,
+              inset -7px -7px 15px #2e2e2e;
+  color: $textHover;
+  transition: .4s ease;
+  cursor: pointer;
+  &:hover{
+    background: linear-gradient(145deg, #2b2b2b, #242424);
+    box-shadow:  7px 7px 15px #222222,
+             -7px -7px 15px #2e2e2e;  
+    color: $whiteHeaders;          
+  }
+}
+
+%button{
+  border-radius:5px;
+  color: $whiteHeaders;
+  background-color: $textHover;
+  transition: .4s ease;
+  padding: .7rem 2rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+  &:hover{
+    background-color: $GreyBg;
+    color: $textHover;
+  }
+
+}
+
+
+
+// Animation extends
+

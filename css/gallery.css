@@ -1,0 +1,1760 @@
+/** @format */ /** @format */
+.ecotourism-container .wrapper .button a, .cultural-container .content-wrapper a, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(223, 193, 94);
+  transition: 0.4s ease;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+}
+.ecotourism-container .wrapper .button a:hover, .cultural-container .content-wrapper a:hover, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a:hover, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a:hover {
+  background-color: rgb(40, 40, 40);
+  color: rgb(223, 193, 94);
+}
+
+/** @format */
+.ecotourism-container .wrapper .button a, .cultural-container .content-wrapper a, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(223, 193, 94);
+  transition: 0.4s ease;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+}
+.ecotourism-container .wrapper .button a:hover, .cultural-container .content-wrapper a:hover, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a:hover, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a:hover {
+  background-color: rgb(40, 40, 40);
+  color: rgb(223, 193, 94);
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: sticky;
+  top: 0%;
+  z-index: 99;
+}
+
+.logo {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.logo h1 {
+  margin: 1.5rem 0rem;
+  color: rgb(51, 51, 51);
+  font-size: clamp(1.3rem, 2rem, 4vw);
+  transition: 0.3s ease;
+  animation: logoAni 1s ease 1;
+}
+.logo h1:hover {
+  color: rgb(223, 193, 94);
+}
+.logo i {
+  display: none;
+  transition: 0.5s ease;
+  font-size: 1.5rem;
+}
+.logo i:hover {
+  color: rgb(223, 193, 94);
+}
+@keyframes logoAni {
+  0% {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navlink-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+}
+.navlink-container ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.navlink-container ul li, .navlink-container ul a {
+  margin: 0rem 1rem;
+  font-size: clamp(1rem, 1.2rem, 4vw);
+  color: rgb(51, 51, 51);
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.3s ease;
+  animation: linksAni 1s ease 1;
+}
+.navlink-container ul li:hover, .navlink-container ul a:hover {
+  color: rgb(223, 193, 94);
+}
+.navlink-container ul li .activelink, .navlink-container ul a .activelink {
+  color: rgb(223, 193, 94);
+}
+.navlink-container ul .gallery-mobile {
+  display: none;
+}
+@keyframes linksAni {
+  0% {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  z-index: 99;
+}
+.dropdown li {
+  color: red;
+}
+.dropdown i {
+  transition: 0.3s ease-out;
+}
+.dropdown:hover i {
+  transform: rotate(180deg);
+}
+.dropdown .dropdwn-content {
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  padding: 1rem 0rem;
+  text-align: center;
+  background-color: white;
+  z-index: 99;
+  position: absolute;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.dropdown .dropdwn-content .activelink {
+  color: rgb(223, 193, 94);
+}
+.dropdown:hover .dropdwn-content {
+  opacity: 1;
+  visibility: visible;
+  padding-top: 2rem;
+}
+.dropdown:hover .dropdwn-content a, .dropdown:hover .dropdwn-content i {
+  font-size: 1.1rem;
+  padding: 1rem 0rem;
+  width: 100%;
+  transition: 0.3s ease;
+}
+.dropdown:hover .dropdwn-content a:hover, .dropdown:hover .dropdwn-content i:hover {
+  color: rgb(223, 193, 94);
+  border-left: 3px solid rgb(223, 193, 94);
+  border-right: 3px solid rgb(223, 193, 94);
+}
+
+/**
+ * /* 
+ *   ##Device = Most of the Smartphones Mobiles (Portrait)
+ *   ##Screen = 320px to 479px
+ *
+ * @format
+ */
+@media (min-width: 240px) and (max-width: 480px) {
+  nav {
+    padding: 2rem 0rem;
+  }
+  nav .logo {
+    width: 100%;
+    justify-content: space-around;
+  }
+  nav .logo i {
+    display: inline;
+  }
+  nav .navlink-container {
+    opacity: 0;
+    position: absolute;
+    top: -50%;
+  }
+  nav .navlink-container.toggleNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    top: 100%;
+    background-color: white;
+    z-index: 99;
+  }
+  nav .navlink-container.toggleNav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .navlink-container.toggleNav ul li {
+    padding: 1rem 0rem;
+  }
+  nav .navlink-container.toggleNav ul .gallery-mobile {
+    display: inline;
+  }
+  nav .dropdown {
+    display: none;
+  }
+}
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = 481px to 767px
+*/
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+  nav {
+    padding: 2rem 0rem;
+  }
+  nav .logo {
+    width: 100%;
+    justify-content: space-around;
+  }
+  nav .logo i {
+    display: inline;
+  }
+  nav .navlink-container {
+    opacity: 0;
+    position: absolute;
+    top: -50%;
+  }
+  nav .navlink-container.toggleNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    top: 100%;
+    background-color: white;
+    z-index: 99;
+  }
+  nav .navlink-container.toggleNav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .navlink-container.toggleNav ul li {
+    padding: 1rem 0rem;
+  }
+  nav .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+  nav .dropdown i {
+    display: none;
+  }
+  nav .dropdown .dropdwn-content i {
+    display: none;
+  }
+}
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen =  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  nav {
+    padding: 2rem 0rem;
+  }
+  nav .logo {
+    width: 100%;
+    justify-content: space-around;
+  }
+  nav .logo i {
+    display: inline;
+  }
+  nav .navlink-container {
+    opacity: 0;
+    position: absolute;
+    top: -50%;
+  }
+  nav .navlink-container.toggleNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    top: 100%;
+    background-color: white;
+    z-index: 99;
+  }
+  nav .navlink-container.toggleNav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .navlink-container.toggleNav ul li {
+    padding: 1rem 0rem;
+  }
+  nav .navlink-container.toggleNav ul .gallery-mobile {
+    display: inline;
+  }
+  nav .dropdown {
+    display: none;
+  }
+}
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+/* 
+##Device = Laptop(portrait)
+##Screen = B/w 1200px to 1450px
+*/
+/** @format */
+.ecotourism-container .wrapper .button a, .cultural-container .content-wrapper a, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(223, 193, 94);
+  transition: 0.4s ease;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+}
+.ecotourism-container .wrapper .button a:hover, .cultural-container .content-wrapper a:hover, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a:hover, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a:hover {
+  background-color: rgb(40, 40, 40);
+  color: rgb(223, 193, 94);
+}
+
+footer {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(40, 40, 40);
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
+footer .top-footer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 1rem;
+}
+footer .top-footer .site-links-container,
+footer .top-footer .reference-container {
+  width: 37.5%;
+  color: rgb(255, 255, 255);
+}
+footer .top-footer .site-links-container h2,
+footer .top-footer .reference-container h2 {
+  color: rgb(223, 193, 94);
+  font-size: clamp(1.5rem, 2rem, 4vw);
+}
+footer .top-footer .site-links-container .logo-container,
+footer .top-footer .reference-container .logo-container {
+  width: 25%;
+}
+footer .top-footer .site-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 5rem;
+}
+footer .top-footer .site-links-container .site-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+footer .top-footer .site-links-container .site-links .links1, footer .top-footer .site-links-container .site-links .links2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .top-footer .site-links-container .site-links .links1 a, footer .top-footer .site-links-container .site-links .links2 a {
+  color: rgb(140, 151, 158);
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
+}
+footer .top-footer .site-links-container .site-links .links1 a:hover, footer .top-footer .site-links-container .site-links .links2 a:hover {
+  color: rgb(255, 255, 255);
+}
+footer .top-footer .site-links-container .site-links .links1 {
+  margin-right: 1rem;
+}
+footer .top-footer .reference-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 0rem;
+}
+footer .top-footer .reference-container .references-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+footer .top-footer .reference-container .references-links .links1, footer .top-footer .reference-container .references-links .links2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .top-footer .reference-container .references-links .links1 a, footer .top-footer .reference-container .references-links .links2 a {
+  color: rgb(140, 151, 158);
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
+}
+footer .top-footer .reference-container .references-links .links1 a:hover, footer .top-footer .reference-container .references-links .links2 a:hover {
+  color: rgb(255, 255, 255);
+}
+footer .top-footer .reference-container .references-links .links1 {
+  margin-right: 1rem;
+}
+footer .top-footer .logo-container img {
+  width: 10rem;
+}
+footer .bottom-footer {
+  width: 100%;
+  padding: 1rem 0rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(20, 20, 20, 0.438);
+}
+footer .bottom-footer p {
+  font-size: 0.8rem;
+}
+footer .bottom-footer span {
+  text-decoration: underline;
+}
+footer .bottom-footer span:hover {
+  color: rgb(223, 193, 94);
+}
+
+/**
+ * /* 
+ *   ##Device = Most of the Smartphones Mobiles (Portrait)
+ *   ##Screen = 320px to 479px
+ *
+ * @format
+ */
+@media (min-width: 240px) and (max-width: 480px) {
+  footer {
+    bottom: -25%;
+  }
+  footer .top-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+    margin: 0;
+  }
+  footer .top-footer .site-links-container,
+footer .top-footer .reference-container,
+footer .top-footer .logo-container {
+    width: 100%;
+    height: 30%;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+  }
+  footer .top-footer .site-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0rem;
+  }
+  footer .top-footer .site-links-container .site-links {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer .top-footer .reference-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0rem;
+  }
+  footer .top-footer .reference-container .references-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+}
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = 481px to 767px
+*/
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+  footer .top-footer {
+    width: 100%;
+  }
+}
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen =  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  footer .top-footer {
+    width: 100%;
+  }
+}
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+/* 
+##Device = Laptop(portrait)
+##Screen = B/w 1200px to 1450px
+*/
+/** @format */
+.ecotourism-container .wrapper .button a, .cultural-container .content-wrapper a, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(223, 193, 94);
+  transition: 0.4s ease;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+}
+.ecotourism-container .wrapper .button a:hover, .cultural-container .content-wrapper a:hover, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card a:hover, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card a:hover {
+  background-color: rgb(40, 40, 40);
+  color: rgb(223, 193, 94);
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadein3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+  z-index: 3;
+}
+
+.tourist-spot-container {
+  width: 100%;
+  padding: 10rem 0rem;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tourist-spot-container .grid-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 550px);
+  grid-template-rows: repeat(2, 400px);
+  position: relative;
+  justify-content: center;
+}
+.tourist-spot-container .grid-wrapper .grid .show-on-scroll {
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+}
+.tourist-spot-container .grid-wrapper .grid .show-on-scroll img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+.tourist-spot-container .grid-wrapper .grid1 .show-on-scroll {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s ease;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.tourist-spot-container .grid-wrapper .grid1 .show-on-scroll img:hover {
+  width: 70%;
+  height: 80%;
+}
+.tourist-spot-container .grid-wrapper .grid1 .is-visible {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.tourist-spot-container .grid-wrapper .grid2 .show-on-scroll {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: 1s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.tourist-spot-container .grid-wrapper .grid2 .show-on-scroll img {
+  width: 70%;
+  height: 80%;
+}
+.tourist-spot-container .grid-wrapper .grid2 .show-on-scroll img:hover {
+  width: 100%;
+  height: 100%;
+}
+.tourist-spot-container .grid-wrapper .grid2 .is-visible {
+  transform: translateX(0%);
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.tourist-spot-container .grid-wrapper .grid3 .show-on-scroll {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s ease;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.tourist-spot-container .grid-wrapper .grid3 .show-on-scroll img {
+  width: 70%;
+  height: 80%;
+}
+.tourist-spot-container .grid-wrapper .grid3 .show-on-scroll img:hover {
+  width: 100%;
+  height: 100%;
+}
+.tourist-spot-container .grid-wrapper .grid3 .is-visible {
+  transform: translateX(0%);
+  opacity: 1;
+  transition-delay: 1s;
+}
+.tourist-spot-container .grid-wrapper .grid4 .show-on-scroll {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: 1s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.tourist-spot-container .grid-wrapper .grid4 .show-on-scroll img:hover {
+  width: 70%;
+  height: 80%;
+}
+.tourist-spot-container .grid-wrapper .grid4 .is-visible {
+  transform: translateX(0%);
+  opacity: 1;
+  transition-delay: 1.5s;
+}
+.tourist-spot-container .grid-wrapper .card-wrapper {
+  width: 25%;
+  height: 300px;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s ease;
+  z-index: 99;
+  perspective: 800px;
+}
+.tourist-spot-container .grid-wrapper .card-wrapper .card, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  transform: scale(0, 0);
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+}
+.tourist-spot-container .grid-wrapper .card-wrapper .card .front-card, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .front-card, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(40, 40, 40);
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.tourist-spot-container .grid-wrapper .card-wrapper .card .front-card h2, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card h2, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .front-card h2, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card h2 {
+  color: rgb(223, 193, 94);
+  font-size: clamp(2rem, 3rem, 5vw);
+}
+.tourist-spot-container .grid-wrapper .card-wrapper .card .back-card, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card {
+  transform: rotateX(180deg);
+  padding: 5rem 1rem;
+}
+.tourist-spot-container .grid-wrapper .card-wrapper .card .back-card p, .tourist-spot-container .grid-wrapper .card-wrapper .show-on-scroll .back-card p {
+  color: rgb(140, 151, 158);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.tourist-spot-container .grid-wrapper .card-wrapper:hover .card {
+  transform: rotateX(180deg);
+}
+.tourist-spot-container .grid-wrapper .card-wrapper .is-visible {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.cultural-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(40, 40, 40);
+  padding: 5rem 0rem;
+  overflow-x: hidden;
+}
+.cultural-container .title h2 {
+  color: rgb(223, 193, 94);
+  font-size: clamp(2rem, 3rem, 5vw);
+}
+.cultural-container .content-wrapper {
+  margin: 5rem 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cultural-container .content-wrapper h2 {
+  color: rgb(223, 193, 94);
+  font-size: 2rem;
+}
+.cultural-container .content-wrapper span {
+  width: 120%;
+  height: 3px;
+  margin-left: -4rem;
+  display: block;
+  background-color: rgb(223, 193, 94);
+  margin: 1rem 0rem;
+}
+.cultural-container .content-wrapper p {
+  color: rgb(140, 151, 158);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.cultural-container .content-wrapper .tangible {
+  width: 80%;
+  height: 550px;
+  margin-bottom: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.cultural-container .content-wrapper .tangible .show-on-scroll {
+  width: 65%;
+  height: 100%;
+  margin-left: 5rem;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s ease;
+}
+.cultural-container .content-wrapper .tangible .show-on-scroll .slide {
+  filter: brightness(100%);
+}
+.cultural-container .content-wrapper .tangible .show-on-scroll .slide1 {
+  background: url("../Image/Tangible/Mt.Guinotan&Cave/Guinobatan3.jpg") no-repeat center;
+  background-size: cover;
+  animation: fadein 15s infinite ease;
+}
+.cultural-container .content-wrapper .tangible .show-on-scroll .slide2 {
+  background: url("../Image/Tangible/AcaciaTrees/Centennial-Acacia-Trees2.jpg") no-repeat center;
+  background-size: cover;
+  animation: fadein2 15s infinite ease;
+}
+.cultural-container .content-wrapper .tangible .show-on-scroll .slide3 {
+  background: url("../Image/Tangible/Mt.Guinotan&Cave/Guinobatan5.jpg") no-repeat center;
+  background-size: cover;
+  animation: fadein3 15s infinite ease;
+}
+.cultural-container .content-wrapper .tangible .show-on-scroll .content {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.cultural-container .content-wrapper .tangible .show-on-scroll .content .show-on-scroll {
+  width: 100%;
+  margin: 0;
+  background-color: #212121;
+  padding: 2rem 1rem 2rem 2rem;
+  opacity: 0;
+  transform: translateX(60%);
+  transition: 1s ease;
+}
+.cultural-container .content-wrapper .tangible .show-on-scroll .content .is-visible {
+  opacity: 1;
+  transform: translateX(0%);
+  transition-delay: 1s;
+}
+.cultural-container .content-wrapper .tangible .is-visible {
+  opacity: 1;
+  transform: unset;
+}
+.cultural-container .content-wrapper .intangible {
+  width: 80%;
+  height: 550px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.cultural-container .content-wrapper .intangible .show-on-scroll {
+  width: 65%;
+  height: 100%;
+  margin-left: 5rem;
+  opacity: 0;
+  transform: translateX(50%);
+  transition: 1s ease;
+}
+.cultural-container .content-wrapper .intangible .show-on-scroll .slide {
+  filter: brightness(100%);
+}
+.cultural-container .content-wrapper .intangible .show-on-scroll .slide1 {
+  background: url("../Image/Intangeble/Guinobatan/53626876_2166756546743635_2050237496700174336_n.jpg") no-repeat center;
+  background-size: cover;
+  animation: fadein 15s infinite ease;
+}
+.cultural-container .content-wrapper .intangible .show-on-scroll .slide2 {
+  background: url("../Image/Intangeble/Biray/Binirayan2.jpg") no-repeat center;
+  background-size: cover;
+  animation: fadein2 15s infinite ease;
+}
+.cultural-container .content-wrapper .intangible .show-on-scroll .slide3 {
+  background: url("../Image/Intangeble/Guinobatan/53660788_2166757453410211_710074290074025984_n.jpg") no-repeat center;
+  background-size: cover;
+  animation: fadein3 15s infinite ease;
+}
+.cultural-container .content-wrapper .intangible .show-on-scroll .content {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  text-align: end;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.cultural-container .content-wrapper .intangible .show-on-scroll .content .show-on-scroll {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: #212121;
+  padding: 2rem 2rem 2rem 0.5rem;
+  opacity: 0;
+  transform: translateX(-60%);
+  transition: 1s ease;
+}
+.cultural-container .content-wrapper .intangible .show-on-scroll .content .is-visible {
+  opacity: 1;
+  transform: translateX(0%);
+  transition-delay: 1s;
+}
+.cultural-container .content-wrapper .intangible .is-visible {
+  opacity: 1;
+  transform: unset;
+}
+
+.ecotourism-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5rem 0rem 35rem 0rem;
+  background-color: rgb(40, 40, 40);
+  overflow: hidden;
+}
+.ecotourism-container .wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2rem 0rem;
+}
+.ecotourism-container .wrapper .title {
+  width: 40%;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 1s ease;
+}
+.ecotourism-container .wrapper .title .top-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.ecotourism-container .wrapper .title h2 {
+  color: rgb(223, 193, 94);
+  font-size: clamp(2rem, 3.5rem, 5vw);
+  margin-left: 0.5rem;
+}
+.ecotourism-container .wrapper .title p {
+  color: rgb(140, 151, 158);
+  line-height: 1.8;
+  margin: 1rem 0rem;
+}
+.ecotourism-container .wrapper .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.ecotourism-container .wrapper .main-img {
+  width: 60%;
+  height: 340px;
+  margin: 2rem 0rem 5rem 0rem;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s ease;
+}
+.ecotourism-container .wrapper .main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgb(40, 40, 40);
+}
+.ecotourism-container .wrapper .main-img .sub-img-top {
+  width: 430px;
+  height: 555px;
+  position: absolute;
+  top: -85%;
+  left: 80%;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 1s ease;
+}
+.ecotourism-container .wrapper .main-img .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1.5s;
+}
+.ecotourism-container .wrapper .main-img .sub-img-bottom {
+  width: 390px;
+  height: 530px;
+  position: absolute;
+  border: 10px solid rgb(255, 255, 255);
+  top: 60%;
+  left: 60%;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 1s ease;
+}
+.ecotourism-container .wrapper .main-img .sub-img-bottom .sub-img-right {
+  width: 316px;
+  height: 280px;
+  border: 8px solid rgb(223, 193, 94);
+  position: absolute;
+  top: -10%;
+  left: 125%;
+  opacity: 0;
+  transform: translateX(50%);
+  transition: 1s ease;
+}
+.ecotourism-container .wrapper .main-img .sub-img-bottom .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1s;
+}
+.ecotourism-container .wrapper .main-img .sub-img-bottom .sub-img-right2 {
+  width: 280px;
+  height: 200px;
+  position: absolute;
+  top: 85%;
+  left: 85%;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 1s ease;
+}
+.ecotourism-container .wrapper .main-img .sub-img-bottom .is-visible {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.ecotourism-container .wrapper .main-img .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.ecotourism-container .wrapper .is-visible {
+  opacity: 1;
+  transform: translateX(0%);
+  transition-delay: 0.5s;
+}
+.churches-container {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.churches-container .text-wrapper {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.churches-container .text-wrapper .title {
+  width: 100%;
+  display: flex;
+}
+.churches-container .text-wrapper .title h2 {
+  align-self: flex-end;
+  color: rgb(223, 193, 94);
+  font-size: clamp(2.5rem, 4rem, 5vw);
+}
+.churches-container .text-wrapper .descript {
+  text-align: justify;
+}
+.churches-container .text-wrapper .descript p {
+  line-height: 1.5;
+}
+.churches-container .text-wrapper .descript .below {
+  text-align: center;
+  margin: 2rem 0rem 4rem 0rem;
+}
+.churches-container .text-wrapper .church-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  gap: 2rem 1rem;
+  margin: 5rem 0rem;
+}
+.churches-container .text-wrapper .church-grid .grid .show-on-scroll {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0rem 1rem 1rem 1rem;
+}
+.churches-container .text-wrapper .church-grid .grid .show-on-scroll h2 {
+  color: rgb(255, 255, 255);
+  font-size: clamp(1rem, 2rem, 5vw);
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 10px black;
+}
+.churches-container .text-wrapper .church-grid .grid .show-on-scroll p {
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 3px black;
+  color: rgb(255, 255, 255);
+}
+.churches-container .text-wrapper .church-grid .grid .show-on-scroll p:hover {
+  background-color: rgba(0, 0, 0, 0.377);
+}
+.churches-container .text-wrapper .church-grid .grid .show-on-scroll .link {
+  margin: 0.4rem 0rem;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+.churches-container .text-wrapper .church-grid .grid .show-on-scroll .link:hover {
+  color: rgb(223, 193, 94);
+  text-decoration: none;
+}
+.churches-container .text-wrapper .church-grid .grid1 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Chuches/OurLadyOfParish/Belison Cathedral.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid1 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.churches-container .text-wrapper .church-grid .grid2 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Chuches/IglesiaFilipinaIndependiente/IFIchurch.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid2 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0.5s;
+}
+.churches-container .text-wrapper .church-grid .grid3 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid3 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1s;
+}
+.churches-container .text-wrapper .church-grid .grid4 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid4 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.churches-container .text-wrapper .church-grid .grid5 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid5 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0.5s;
+}
+.churches-container .text-wrapper .church-grid .grid6 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid6 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1s;
+}
+.churches-container .text-wrapper .church-grid .grid7 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid7 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.churches-container .text-wrapper .church-grid .grid8 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid8 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0.5s;
+}
+.churches-container .text-wrapper .church-grid .grid9 .show-on-scroll {
+  background: rgb(40, 40, 40) url("../Image/Placeholders/istockphoto-1147544807-612x612.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.8s ease;
+}
+.churches-container .text-wrapper .church-grid .grid9 .is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1s;
+}
+
+/**
+ * /* 
+ *   ##Device = Most of the Smartphones Mobiles (Portrait)
+ *   ##Screen = 320px to 479px
+ *
+ * @format
+ */
+@media (min-width: 240px) and (max-width: 480px) {
+  .tourist-spot-container {
+    padding: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tourist-spot-container .grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .tourist-spot-container .grid-wrapper .grid .show-on-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .tourist-spot-container .grid-wrapper .grid .show-on-scroll img {
+    width: 90%;
+  }
+  .tourist-spot-container .grid-wrapper .gri1 .is-visible,
+.tourist-spot-container .grid-wrapper .grid2 .is-visible,
+.tourist-spot-container .grid-wrapper .grid3 .is-visible,
+.tourist-spot-container .grid-wrapper .grid4 .is-visible {
+    transition-delay: unset;
+  }
+  .tourist-spot-container .grid-wrapper .grid2 .show-on-scroll img {
+    width: 90%;
+    height: 100%;
+  }
+  .tourist-spot-container .grid-wrapper .grid3 .show-on-scroll img {
+    width: 90%;
+    height: 100%;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .front-card, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .front-card {
+    padding: 1rem 0rem 0rem 0rem;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card {
+    transform: rotateX(0deg);
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .cultural-container {
+    padding: 5rem 0rem;
+  }
+  .cultural-container .content-wrapper {
+    height: auto;
+    padding: 0rem 0rem 20rem 0rem;
+  }
+  .cultural-container .content-wrapper span {
+    width: 90%;
+    margin-left: 0rem;
+  }
+  .cultural-container .content-wrapper .tangible {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll {
+    width: 100%;
+    height: 100%;
+    margin-left: 0rem;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll .content {
+    width: 100%;
+    padding: 2rem 0rem 2rem 0rem;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0%);
+    z-index: 1;
+    margin-bottom: 10rem;
+  }
+  .cultural-container .content-wrapper .intangible {
+    width: 93%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 90;
+    position: relative;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll {
+    width: 100%;
+    height: 100%;
+    margin-left: 0rem;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll .content {
+    width: 100%;
+    padding: 1rem 0rem 0rem 0rem;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    transform: translateY(0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ecotourism-container {
+    padding: 5rem 0rem 90rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  .ecotourism-container .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0rem;
+  }
+  .ecotourism-container .wrapper .title {
+    width: 90%;
+  }
+  .ecotourism-container .wrapper .main-img {
+    width: 85%;
+    margin: 2rem 0rem 2.5rem 0rem;
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-top {
+    width: 100%;
+    height: 350px;
+    position: unset;
+    margin: 5.5rem 0rem;
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom {
+    width: 100%;
+    border: none;
+    height: 350px;
+    position: unset;
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom .sub-img-right {
+    width: 100%;
+    border: none;
+    position: unset;
+    margin: 4rem 0rem;
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom .sub-img-right2 {
+    width: 100%;
+    position: unset;
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  .churches-container .text-wrapper .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .churches-container .text-wrapper .title h2 {
+    text-align: center;
+    align-self: unset;
+  }
+  .churches-container .text-wrapper .descript {
+    text-align: center;
+  }
+  .churches-container .text-wrapper .descript p {
+    line-height: 1.6;
+  }
+  .churches-container .text-wrapper .church-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 300px);
+  }
+}
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = 481px to 767px
+*/
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+  .tourist-spot-container {
+    padding: 5rem 0rem;
+  }
+  .tourist-spot-container .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tourist-spot-container .grid-wrapper .grid .show-on-scroll img {
+    width: 90%;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper {
+    width: 40%;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .front-card .a-tour, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card .a-tour {
+    text-decoration: underline;
+  }
+  .cultural-container {
+    padding: 5rem 0rem;
+  }
+  .cultural-container .content-wrapper span {
+    width: 100%;
+  }
+  .cultural-container .content-wrapper .tangible {
+    width: 90%;
+    height: 450px;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll {
+    margin-left: 0rem;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll .content {
+    width: 50%;
+    padding: 2rem 1rem 2rem 1rem;
+    left: 55%;
+  }
+  .cultural-container .content-wrapper .intangible {
+    width: 90%;
+    height: 450px;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll {
+    margin-left: 0rem;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll .content {
+    width: 50%;
+    padding: 2rem 1rem 2rem 1rem;
+    left: 0%;
+  }
+  .ecotourism-container {
+    padding: 5rem 0rem 90rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  .ecotourism-container .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0rem;
+  }
+  .ecotourism-container .wrapper .title {
+    width: 90%;
+  }
+  .ecotourism-container .wrapper .main-img {
+    width: 85%;
+    margin: 2rem 0rem 2.5rem 0rem;
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-top {
+    width: 100%;
+    height: 350px;
+    position: unset;
+    margin: 5.5rem 0rem;
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom {
+    width: 100%;
+    border: none;
+    height: 350px;
+    position: unset;
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom .sub-img-right {
+    width: 100%;
+    border: none;
+    position: unset;
+    margin: 4rem 0rem;
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom .sub-img-right2 {
+    width: 100%;
+    position: unset;
+  }
+  .churches-container .text-wrapper .church-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 300px);
+  }
+  .churches-container .text-wrapper .grid9 {
+    grid-column: 1/3;
+  }
+}
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen =  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .tourist-spot-container {
+    padding: 5rem 0rem;
+  }
+  .tourist-spot-container .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tourist-spot-container .grid-wrapper .grid .show-on-scroll img {
+    width: 90%;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper {
+    width: 40%;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .front-card .a-tour, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card .a-tour {
+    text-decoration: underline;
+  }
+  .cultural-container {
+    padding: 5rem 0rem;
+  }
+  .cultural-container .content-wrapper span {
+    width: 100%;
+  }
+  .cultural-container .content-wrapper .tangible {
+    width: 90%;
+    height: 450px;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll {
+    margin-left: 0rem;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll .content {
+    width: 50%;
+    padding: 2rem 1rem 2rem 0rem;
+    left: 50%;
+  }
+  .cultural-container .content-wrapper .intangible {
+    width: 90%;
+    height: 450px;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll {
+    margin-left: 0rem;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll .content {
+    width: 50%;
+    padding: 2rem 1rem 2rem 1rem;
+    left: 0%;
+  }
+  .ecotourism-container {
+    padding: 5rem 0rem 20rem 0rem;
+  }
+  .ecotourism-container .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem 0rem 2rem 3rem;
+  }
+  .ecotourism-container .wrapper .main-img {
+    width: 65%;
+    height: 340px;
+    margin: 2rem 0rem 5rem 0rem;
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-top {
+    width: 320px;
+    height: 520px;
+    top: -65%;
+    left: 80%;
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom {
+    width: 340px;
+    height: 480px;
+    top: 60%;
+    left: 49%;
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom .sub-img-right {
+    width: 270px;
+    height: 220px;
+    top: 70%;
+    left: 65%;
+  }
+  .ecotourism-container .wrapper .main-img .sub-img-bottom .sub-img-right2 {
+    display: none;
+  }
+  .churches-container .text-wrapper .church-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 300px);
+  }
+  .churches-container .text-wrapper .grid9 {
+    grid-column: 1/3;
+  }
+}
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 960px) and (max-width: 1300px) and (orientation: landscape) {
+  .tourist-spot-container {
+    padding: 5rem 0rem;
+  }
+  .tourist-spot-container .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tourist-spot-container .grid-wrapper .grid .show-on-scroll img {
+    width: 90%;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper {
+    width: 40%;
+  }
+  .tourist-spot-container .grid-wrapper .card-wrapper .card .front-card .a-tour, .tourist-spot-container .grid-wrapper .card-wrapper .card .back-card .a-tour {
+    text-decoration: underline;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll .content {
+    width: 40%;
+  }
+  .cultural-container .content-wrapper .tangible .show-on-scroll .content .show-on-scroll {
+    padding: 2rem 0rem 2rem 0.5rem;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll .content {
+    width: 40%;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll .content .show-on-scroll {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
+/* 
+##Device = Laptop(portrait)
+##Screen = B/w 1200px to 1450px
+*/
+@media (min-width: 1200px) and (max-width: 1450px) {
+  .cultural-container .content-wrapper .tangible .show-on-scroll .content {
+    width: 35%;
+    left: 65%;
+  }
+  .cultural-container .content-wrapper .intangible .show-on-scroll .content {
+    width: 35%;
+    left: 10%;
+  }
+}

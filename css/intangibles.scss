@@ -1,0 +1,402 @@
+/** @format */
+
+// Imports
+@import '../Mixins';
+@import '../navbar';
+@import '../footer';
+@import '../header';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+main {
+  position: relative;
+  z-index: 3;
+  h2 {
+    color: $textHover;
+    text-align: center;
+  }
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: $whiteHeaders;
+  position: relative;
+
+  .slide1 {
+    background: url('../Image/Intangeble/Guinobatan/53824265_2166756750076948_3479448951764025344_n.jpg')
+      no-repeat center;
+    background-size: cover;
+    animation: fade 15s infinite ease;
+  }
+  .slide2 {
+    background: url('../Image/Intangeble/Biray/392075_225608677567360_783497548_n.jpg')
+      no-repeat center;
+    background-size: cover;
+    animation: fade2 15s infinite ease;
+  }
+  .slide3 {
+    background: url('../Image/Intangeble/Guinobatan/53721429_2166758276743462_5079875038950195200_n.jpg')
+      no-repeat center;
+    background-size: cover;
+    animation: fade3 15s infinite ease;
+  }
+
+  .header-content {
+    z-index: 99;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+
+    .show-on-scroll {
+      transition: 1s ease;
+      padding: 4rem 3rem;
+      h2 {
+        font-size: clamp(3rem, 5.5rem, 5vw);
+        text-shadow: 2px 1px 10px black;
+      }
+      p {
+        margin-top: 1.5rem;
+        color: $whiteHeaders;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.grid-container {
+  width: 100%;
+  padding: 5rem 0rem;
+  @include flexBox(center, center, column);
+  background-color: $whiteHeaders;
+  .title-descript {
+    width: 45%;
+    .show-on-scroll {
+      width: 100%;
+      padding: 2rem 5rem;
+      border-radius: 10px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+      margin-bottom: 5rem;
+      opacity: 0;
+      transform: translateY(-40%);
+      transition: 1s ease;
+      h2 {
+        font-size: clamp(2rem, 3.5rem, 4vw);
+      }
+      p {
+        line-height: 1.5;
+        margin: 1rem 0rem;
+        text-align: justify;
+      }
+      .social-icons {
+        @include flexBox(center, center, row);
+        img {
+          width: 3.2rem;
+          transition: 0.8s ease;
+          margin-right: 0.5rem;
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    .is-visible {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .grid-wrapper {
+    width: 95%;
+    @include grid(repeat(3, 1fr), repeat(10, 400px), 1rem);
+    .grid {
+      .show-on-scroll {
+        width: 100%;
+        height: 100%;
+        @include flexBox(center, center, column);
+        overflow: hidden;
+        position: relative;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.5s ease;
+          &:hover {
+            transform: scale(1.2, 1.2);
+            filter: brightness(50%);
+          }
+        }
+        .link-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $whiteHeaders;
+          text-align: center;
+          font-size: 1rem;
+          line-height: 1.5;
+          opacity: 0;
+          transition: 0.3s ease;
+          a {
+            color: $textHover;
+            text-decoration: underline;
+            &:hover {
+              color: $whiteHeaders;
+              text-decoration: none;
+            }
+          }
+        }
+        &:hover .link-text {
+          opacity: 1;
+        }
+      }
+    }
+    .grid {
+      .show-on-scroll {
+        opacity: 0;
+        transform: translateY(40%);
+        transition: 1s ease;
+      }
+      .is-visible {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    .grid2 {
+      grid-column: 2/4;
+    }
+    .grid6 {
+      grid-column: 1/3;
+    }
+    .grid8 {
+      grid-row: 4/6;
+    }
+    .grid14 {
+      grid-column: 2/4;
+    }
+    .grid19 {
+      grid-row: 8/10;
+      grid-column: 2/3;
+    }
+    .grid24 {
+      grid-column: 2/4;
+    }
+  }
+  .vid-container {
+    width: 100%;
+    @include flexBox(space-around, center, row);
+    margin: 4rem 0rem;
+    .iframe {
+      width: 30%;
+      .show-on-scroll {
+        transform: translateY(45%);
+        opacity: 0;
+        transition: 1s ease;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+
+        iframe {
+          width: 100%;
+        }
+      }
+      .is-visible {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+
+    .iframe2 {
+      .is-visible {
+        transition-delay: 0.3s;
+      }
+    }
+    .iframe3 {
+      .is-visible {
+        transition-delay: 0.6s;
+      }
+    }
+  }
+}
+
+.guino-festi{
+  .title-descript {
+    width: 55%;
+  }
+  .grid-wrapper {
+    @include grid(repeat(3, 1fr), repeat(10, 400px), 1rem);
+    .grid {
+      grid-column: unset;
+      grid-row: unset;
+    }
+  }
+  .vid-container {
+    width: 100%;
+    @include flexBox(space-around, center, row);
+    margin: 4rem 0rem;
+    .iframe {
+      width: 40%;
+    }
+  }
+}
+.flores {
+  .title-descript {
+    width: 60%;
+  }
+  .grid-wrapper {
+    @include grid(repeat(3, 1fr), repeat(4, 400px), 1rem);
+    .grid {
+      grid-column: unset;
+      grid-row: unset;
+    }
+    .grid1{
+        grid-row: 1/3;
+    }
+    .grid6{
+        grid-column: 1/3;
+    }
+  }
+}
+.Lin-ay {
+  .title-descript {
+    width: 50%;
+  }
+  .grid-wrapper {
+    @include grid(repeat(3, 1fr), repeat(1, 1fr), 1rem);
+    .grid {
+      grid-column: unset;
+      grid-row: unset;
+    }
+  }
+}
+
+
+//
+//
+//
+//
+//
+//
+/**
+ * /* 
+ *   ##Device = Most of the Smartphones Mobiles (Portrait)
+ *   ##Screen = 320px to 479px
+ *
+ * @format
+ */
+
+@media (min-width: 240px) and (max-width: 480px) {
+  header {
+    .header-content {
+      width: 85%;
+
+      .show-on-scroll {
+        padding: 4rem 0rem;
+      }
+    }
+  }
+
+  .grid-container {
+    .title-descript {
+      width: 85%;
+      .show-on-scroll {
+        padding: 2rem 1rem;
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .grid-wrapper {
+      width: 95%;
+      @include grid(repeat(2, 1fr), 1fr, 1rem);
+      .grid {
+        grid-column: unset;
+        grid-row: unset;
+      }
+    }
+    .vid-container {
+      width: 100%;
+      @include flexBox(space-around, center, column);
+      margin: 2rem 0rem;
+      .iframe {
+        width: 80%;
+        margin: 1rem 0rem;
+      }
+    }
+  }
+
+  .ocean-view {
+    .grid-wrapper {
+      @include grid(repeat(2, 1fr), 1fr, 1rem);
+    }
+  }
+
+  .santa-fe {
+    .grid-wrapper {
+      @include grid(repeat(2, 1fr), 1fr, 1rem);
+      .grid {
+        grid-column: unset;
+        grid-row: unset;
+      }
+    }
+  }
+
+  .bel-nature {
+    .grid-wrapper {
+      @include grid(repeat(2, 1fr), 1fr, 1rem);
+
+      .grid8 {
+        grid-column: unset;
+        grid-row: unset;
+      }
+    }
+  }
+
+  .bel-WayofLife {
+    .grid-wrapper {
+      @include grid(repeat(2, 1fr), 1fr, 1rem);
+
+      .grid26 {
+        grid-column: unset;
+        grid-row: unset;
+      }
+    }
+  }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = 481px to 767px
+*/
+
+@media (min-width: 565px) and (max-width: 960px) and (orientation: landscape) {
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen =  768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 960px) and (max-width: 1300px) and (orientation: landscape) {
+}
+
+/* 
+##Device = Laptop(portrait)
+##Screen = B/w 1200px to 1450px
+*/
+@media (min-width: 1200px) and (max-width: 1450px) {
+}
