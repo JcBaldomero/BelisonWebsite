@@ -27,17 +27,17 @@ header{
   position: relative;
 
 .slide1{
-  background: url('../BelisonWebsite/image/BelisonNature/BelisonBeach1.jpg') no-repeat center;
+  background: url('./image/BelisonNature/BelisonBeach1.jpg') no-repeat center;
   background-size: cover;
   animation:fade 15s infinite ease;
 }
 .slide2{
-  background: url('../BelisonWebsite/image/BelisonNature/BelisonMountain2.jpg') no-repeat center;
+  background: url('./image/BelisonNature/BelisonMountain2.jpg') no-repeat center;
   background-size: cover;
   animation:fade2 15s infinite ease;
 }
 .slide3{
-  background: url('../BelisonWebsite/image/Intangeble/Guinobatan/53518781_2166757243410232_6481788046952890368_n.jpg') no-repeat center;
+  background: url('./image/Intangeble/Guinobatan/53518781_2166757243410232_6481788046952890368_n.jpg') no-repeat center;
   background-size: cover;
   animation:fade3 15s infinite ease;
 }
