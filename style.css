@@ -885,19 +885,19 @@ header .header-content .is-visible {
   background-color: rgba(0, 0, 0, 0.473);
 }
 .true-belison-container .true-accordion .show-on-scroll .img1 {
-  background: url(./image/Tourist-Spots/OceanView/Belison-Sunset-1.jpg) no-repeat center;
+  background: url(./Image/Tourist-Spots/OceanView/Belison-Sunset-1.jpg) no-repeat center;
   background-size: cover;
 }
 .true-belison-container .true-accordion .show-on-scroll .img2 {
-  background: url(./image/BelisonMunicipalHallEtc/MunicipalHallFrontView.jpg) no-repeat center;
+  background: url(./Image/BelisonMunicipalHallEtc/MunicipalHallFrontView.jpg) no-repeat center;
   background-size: cover;
 }
 .true-belison-container .true-accordion .show-on-scroll .img3 {
-  background: url(./image/Tangible/Mt.Guinotan&Cave/Mt-GuinobatanCave.jpg) no-repeat bottom;
+  background: url(./Image/Tangible/Mt.Guinotan&Cave/Mt-GuinobatanCave.jpg) no-repeat bottom;
   background-size: cover;
 }
 .true-belison-container .true-accordion .show-on-scroll .img4 {
-  background: url(./image/Intangeble/Guinobatan/54434329_2166758403410116_1509170466076491776_n.jpg);
+  background: url(./Image/Intangeble/Guinobatan/54434329_2166758403410116_1509170466076491776_n.jpg);
 }
 .true-belison-container .true-accordion .is-visible {
   opacity: 1;
