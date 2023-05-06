@@ -524,8 +524,8 @@ footer .bottom-footer span:hover {
     margin: 0;
   }
   footer .top-footer .site-links-container,
-footer .top-footer .reference-container,
-footer .top-footer .logo-container {
+  footer .top-footer .reference-container,
+  footer .top-footer .logo-container {
     width: 100%;
     height: 30%;
     color: rgb(255, 255, 255);

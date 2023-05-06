@@ -476,8 +476,8 @@ footer .bottom-footer span:hover {
     margin: 0;
   }
   footer .top-footer .site-links-container,
-footer .top-footer .reference-container,
-footer .top-footer .logo-container {
+  footer .top-footer .reference-container,
+  footer .top-footer .logo-container {
     width: 100%;
     height: 30%;
     color: rgb(255, 255, 255);
@@ -1341,9 +1341,9 @@ main {
     width: 90%;
   }
   .tourist-spot-container .grid-wrapper .gri1 .is-visible,
-.tourist-spot-container .grid-wrapper .grid2 .is-visible,
-.tourist-spot-container .grid-wrapper .grid3 .is-visible,
-.tourist-spot-container .grid-wrapper .grid4 .is-visible {
+  .tourist-spot-container .grid-wrapper .grid2 .is-visible,
+  .tourist-spot-container .grid-wrapper .grid3 .is-visible,
+  .tourist-spot-container .grid-wrapper .grid4 .is-visible {
     transition-delay: unset;
   }
   .tourist-spot-container .grid-wrapper .grid2 .show-on-scroll img {
